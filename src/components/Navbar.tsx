@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ServinixLogo from "./ServinixLogo";
 
 const navLinks = [
   { label: "Platform", href: "/features" },
@@ -17,12 +18,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="text-sm font-bold text-primary-foreground">N</span>
-          </div>
-          <span className="font-heading text-xl font-bold text-foreground">Newco</span>
-        </Link>
+        <ServinixLogo />
 
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
