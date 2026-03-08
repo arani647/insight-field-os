@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Servinix - Lovable Project
 
 ## Project info
 
