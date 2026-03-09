@@ -104,30 +104,30 @@ const Index = () => {
 
         <div className="container relative mx-auto px-4 pt-20 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
           <div className="max-w-4xl mx-auto text-center">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            <div className="animate-fade-up">
               <span className="inline-block mb-6 px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
                 The AI-Native Platform for Service Businesses
               </span>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
-              className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-[1.1] tracking-tight"
+            <h1
+              className="animate-fade-up font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-[1.1] tracking-tight"
+              style={{ animationDelay: "0.1s", animationFillMode: "both" }}
             >
               Run Your Service Business on{" "}
               <span className="text-gradient">One AI-Native Platform</span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-6 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed"
+            <p
+              className="animate-fade-up mt-6 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed"
+              style={{ animationDelay: "0.2s", animationFillMode: "both" }}
             >
               Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform.
-            </motion.p>
+            </p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}
-              className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            <div
+              className="animate-fade-up mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+              style={{ animationDelay: "0.3s", animationFillMode: "both" }}
             >
               <Link to="/contact">
                 <Button variant="hero" size="lg" className="text-base px-8 py-6">
