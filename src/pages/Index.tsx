@@ -110,12 +110,8 @@ const Index = () => {
 
         <div className="container relative mx-auto px-4 pt-20 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
           <div className="max-w-4xl mx-auto text-center">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-              <span className="inline-block mb-6 px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">FINALLY, ONE PLATFORM TO RUN YOUR SERVICE BUSINESS
 
 
-              </span>
-            </motion.div>
 
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
             className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-[1.1] tracking-tight">
