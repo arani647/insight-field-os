@@ -135,18 +135,8 @@ const Index = () => {
               className="mt-6 text-lg md:text-xl font-bold max-w-2xl mx-auto text-amber-400">
               ALL THIS AT HALF THE COST
             </motion.p>
-          
-         
-        
-       
-      
-     
-    
-   
-  
- 
 
-            </motion.p>
+
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               
