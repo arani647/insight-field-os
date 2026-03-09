@@ -127,28 +127,16 @@ const Index = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
               className="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-amber-400">
-              
-              Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform. 
-
-ALL THIS AT HALF THE COST     
-                
-               
-              
-             
-            
-           
-          
-         
-        
-       
-      
-     
-    
-   
-  
- 
-
+              Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform.
             </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}
+              className="mt-6 text-lg md:text-xl font-bold max-w-2xl mx-auto text-amber-400">
+              ALL THIS AT HALF THE COST
+            </motion.p>
+
+
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               
