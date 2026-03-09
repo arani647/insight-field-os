@@ -8,14 +8,7 @@ import {
   MapPin, Wrench, MessageSquare, Brain, ArrowRight,
   Zap, Eye, TrendingUp, Shield, Clock, Users,
   Building2, Thermometer, Droplets, Bug, Trees,
-  Check, HelpCircle,
 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const LazyMotionSections = lazy(() => import("@/components/MotionSections"));
 
