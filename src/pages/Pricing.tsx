@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight, HelpCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.png";
 import {
   Accordion,
@@ -12,82 +11,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const tiers = [
-  {
-    name: "Starter",
-    description: "For small teams getting started",
-    price: "$99",
-    period: "/month",
-    highlight: false,
-    features: [
-      "Up to 5 users",
-      "Fleet GPS tracking (10 vehicles)",
-      "Basic scheduling & dispatch",
-      "Customer SMS messaging",
-      "Mobile app for technicians",
-      "Email support",
-    ],
-    cta: "Start Free Trial",
-  },
-  {
-    name: "Growth",
-    description: "For growing service businesses",
-    price: "$299",
-    period: "/month",
-    highlight: true,
-    features: [
-      "Up to 25 users",
-      "Fleet GPS tracking (50 vehicles)",
-      "Advanced scheduling & dispatch",
-      "Unified inbox & missed call text back",
-      "AI-suggested responses",
-      "Review management",
-      "Work order management",
-      "Invoicing & payments",
-      "Priority support",
-    ],
-    cta: "Start Free Trial",
-  },
-  {
-    name: "Professional",
-    description: "For established operations",
-    price: "$599",
-    period: "/month",
-    highlight: false,
-    features: [
-      "Up to 100 users",
-      "Unlimited fleet tracking",
-      "AI voice receptionist",
-      "After-hours AI answering",
-      "Automated workflows",
-      "Advanced analytics",
-      "API access",
-      "Custom integrations",
-      "Dedicated success manager",
-    ],
-    cta: "Start Free Trial",
-  },
-  {
-    name: "Enterprise",
-    description: "For large organizations",
-    price: "Custom",
-    period: "",
-    highlight: false,
-    features: [
-      "Unlimited users",
-      "Unlimited fleet tracking",
-      "Full AI voice & automation suite",
-      "Custom AI training",
-      "White-label options",
-      "SLA guarantees",
-      "On-premise deployment options",
-      "Dedicated support team",
-      "Custom development",
-    ],
-    cta: "Contact Sales",
-  },
-];
 
 const faqs = [
   {
@@ -157,90 +80,6 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Pricing Grid */}
-      <section className="py-24 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {tiers.map((tier, i) => (
-              <motion.div
-                key={tier.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className={`rounded-2xl border p-8 ${
-                  tier.highlight
-                    ? "border-primary bg-card-gradient glow-primary relative"
-                    : "border-border/50 bg-card"
-                }`}
-              >
-                {tier.highlight && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold">
-                    Most Popular
-                  </div>
-                )}
-                <div className="mb-6">
-                  <h3 className="font-heading text-xl font-semibold text-foreground">{tier.name}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{tier.description}</p>
-                </div>
-                <div className="mb-6">
-                  <span className="font-heading text-4xl font-bold text-foreground">{tier.price}</span>
-                  <span className="text-muted-foreground">{tier.period}</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {tier.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-sm">
-                      <Check className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/contact" className="block">
-                  <Button
-                    variant={tier.highlight ? "hero" : "outline"}
-                    className="w-full"
-                  >
-                    {tier.cta}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Replace Multiple Tools */}
-      <section className="py-24 lg:py-32 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <SectionHeading
-              badge="Value"
-              title="Replace multiple tools with"
-              highlight="one platform"
-              description="Most service businesses pay for 3-5 separate software subscriptions. Servinix consolidates them all."
-            />
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
-              <div className="p-6 rounded-xl border border-border/50 bg-background">
-                <div className="text-2xl font-bold text-foreground line-through opacity-50 mb-1">$200-400</div>
-                <p className="text-sm text-muted-foreground">Fleet tracking software</p>
-              </div>
-              <div className="p-6 rounded-xl border border-border/50 bg-background">
-                <div className="text-2xl font-bold text-foreground line-through opacity-50 mb-1">$150-500</div>
-                <p className="text-sm text-muted-foreground">Field service software</p>
-              </div>
-              <div className="p-6 rounded-xl border border-border/50 bg-background">
-                <div className="text-2xl font-bold text-foreground line-through opacity-50 mb-1">$100-300</div>
-                <p className="text-sm text-muted-foreground">Communication tools</p>
-              </div>
-            </div>
-            <div className="mt-8 p-6 rounded-xl border border-primary/30 bg-primary/5">
-              <p className="text-muted-foreground mb-2">Servinix replaces all of the above</p>
-              <div className="text-3xl font-bold text-gradient">Starting at $99/month</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="py-24 lg:py-32">
