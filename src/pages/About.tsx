@@ -1,40 +1,40 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
+import SectionHeading from "@/components/SectionHeading";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Target, Rocket, Heart } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5 } }),
-};
+import { ArrowRight, Target, Users, Lightbulb, Rocket } from "lucide-react";
 
 const values = [
-  { icon: Target, title: "Mission-Driven", description: "We believe every service business deserves access to the same operational technology that powers the Fortune 500." },
-  { icon: Rocket, title: "Innovation-First", description: "We don't build incremental improvements on legacy software. We rethink how service operations should work from the ground up." },
-  { icon: Heart, title: "Customer-Obsessed", description: "Our customers operate in the real world—on job sites, in trucks, at customers' homes. We build for their reality." },
+  { icon: Target, title: "Operational Excellence", description: "We obsess over the details that make service businesses run smoothly. Every feature is designed to eliminate friction and improve outcomes." },
+  { icon: Lightbulb, title: "AI-Native Thinking", description: "We don't bolt AI onto legacy software. Our platform is built from the ground up to leverage intelligent automation at every touchpoint." },
+  { icon: Users, title: "Customer Partnership", description: "We succeed when our customers succeed. We work closely with service businesses to understand their challenges and build solutions that matter." },
+  { icon: Rocket, title: "Continuous Innovation", description: "The field service industry is evolving. We're committed to staying ahead with new features, integrations, and capabilities." },
+];
+
+const team = [
+  { name: "Alex Chen", role: "CEO & Co-Founder", bio: "Former operations leader at a national HVAC company. Built Servinix to solve problems he lived every day." },
+  { name: "Sarah Martinez", role: "CTO & Co-Founder", bio: "Ex-Google engineer with deep expertise in AI and distributed systems. Leads our technical vision." },
+  { name: "Mike Thompson", role: "VP of Product", bio: "15 years in field service software. Obsessed with building tools that technicians actually want to use." },
+  { name: "Lisa Park", role: "VP of Customer Success", bio: "Former service business owner. Ensures every customer achieves their operational goals." },
 ];
 
 const About = () => {
   return (
     <Layout>
-      <section className="relative overflow-hidden bg-hero-gradient pt-20 pb-24 lg:pt-32">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/3 left-1/3 h-80 w-80 rounded-full bg-primary/10 blur-[120px]" />
+      <section className="relative overflow-hidden bg-hero-gradient">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
         </div>
-        <div className="container relative mx-auto px-4 lg:px-8 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="inline-block mb-6 px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-              About Us
-            </span>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.1]">
-              Building the future of{" "}
-              <span className="text-gradient">service operations</span>
-            </h1>
-            <p className="mt-6 text-lg text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed">
-              Servinix is building the next-generation operating system for service businesses—unifying fleet GPS tracking, field service management, and customer communication into one AI-native platform.
-            </p>
-          </motion.div>
+        <div className="container relative mx-auto px-4 pt-20 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
+          <div className="max-w-3xl mx-auto text-center">
+            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.1] tracking-tight">
+              About <span className="text-gradient">Servinix</span>
+            </motion.h1>
+            <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="mt-6 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto">
+              We're building the AI-native operating system for field service businesses.
+            </motion.p>
+          </div>
         </div>
       </section>
 
@@ -42,13 +42,16 @@ const About = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-8">The problem we're solving</h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>Service businesses—plumbers, HVAC companies, landscapers, electricians, pest control operators—run the physical world. Yet they're stuck stitching together disconnected point solutions that weren't designed to work together.</p>
-                <p>One tool for fleet tracking. Another for scheduling. Another for customer messaging. None of them talk to each other, and none of them are truly intelligent.</p>
-                <p>Servinix changes that. We built a single, unified platform with an intelligent layer of AI assistants that actively manage conversations, automate workflows, surface insights, and help teams make better decisions—from dispatch to job completion to customer follow-up.</p>
-                <p>Our goal: deliver enterprise-grade functionality—visibility, automation, and intelligence—without enterprise cost, contracts, or complexity. Making advanced operational technology accessible to every service business.</p>
-              </div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Our Mission</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Field service businesses are the backbone of the economy. HVAC technicians, plumbers, electricians, and countless other professionals keep our homes and businesses running. Yet they're often stuck with fragmented, outdated software that creates more work instead of reducing it.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                We started Servinix because we believe these businesses deserve better. They deserve a single platform that handles everything—from knowing where their trucks are to managing jobs to communicating with customers. And they deserve AI that actually helps, not just buzzwords.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Our mission is to help service businesses operate more efficiently, grow more profitably, and deliver exceptional customer experiences—without adding complexity or overhead.
+              </p>
             </motion.div>
           </div>
         </div>
@@ -56,41 +59,67 @@ const About = () => {
 
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-16">What drives us</motion.h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Why We Built Servinix</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Our founders came from the world of field service operations. They lived the pain of juggling multiple software subscriptions, manually moving data between systems, and missing customer calls because no one could answer.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                They saw that existing solutions were either too simple (basic scheduling tools) or too complex (enterprise systems that cost six figures and take months to implement). There was nothing in between for growing service businesses that needed power without complexity.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                So they built Servinix: an AI-native platform that combines fleet tracking, field service management, and customer communication into one unified system. It's powerful enough to run a 100-truck operation, but simple enough to set up in a week.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading badge="Values" title="What drives" highlight="our work" description="The principles that guide how we build products and serve customers." />
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {values.map((value, i) => (
-              <motion.div key={value.title} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-                className="rounded-xl border border-border/50 bg-card-gradient p-8 text-center">
-                <div className="flex h-12 w-12 mx-auto items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
-                  <value.icon className="h-6 w-6" />
+              <motion.div key={value.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0"><value.icon className="w-6 h-6" /></div>
+                <div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground mb-2">{value.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-foreground mb-3">{value.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{value.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-primary/10 blur-[150px]" />
-        </div>
-        <div className="container relative mx-auto px-4 lg:px-8 text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-            Join us in transforming <span className="text-gradient">service operations</span>
-          </h2>
-          <p className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto">
-            We're always looking for talented people who want to build the future of work for service businesses.
-          </p>
-          <div className="mt-10">
-            <Link to="/contact">
-              <Button variant="hero" size="lg" className="text-base px-10 py-6">
-                Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+      <section className="py-24 lg:py-32 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading badge="Team" title="Leadership" highlight="team" description="The people building the future of field service operations." />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {team.map((member, i) => (
+              <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center">
+                <div className="w-24 h-24 rounded-full bg-muted mx-auto mb-4" />
+                <h3 className="font-heading font-semibold text-foreground">{member.name}</h3>
+                <div className="text-sm text-primary mb-3">{member.role}</div>
+                <p className="text-sm text-muted-foreground">{member.bio}</p>
+              </motion.div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8 text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Join us on the journey</h2>
+            <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
+              Whether you're a service business looking to modernize or a talented builder who wants to make an impact, we'd love to hear from you.
+            </p>
+            <Link to="/contact">
+              <Button variant="hero" size="lg" className="text-base px-10 py-6">Book a Demo <ArrowRight className="ml-2 h-4 w-4" /></Button>
+            </Link>
+          </motion.div>
         </div>
       </section>
     </Layout>
