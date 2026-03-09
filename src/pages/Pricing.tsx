@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight, HelpCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.png";
 import {
   Accordion,
@@ -12,82 +11,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const tiers = [
-  {
-    name: "Starter",
-    description: "For small teams getting started",
-    price: "$99",
-    period: "/month",
-    highlight: false,
-    features: [
-      "Up to 5 users",
-      "Fleet GPS tracking (10 vehicles)",
-      "Basic scheduling & dispatch",
-      "Customer SMS messaging",
-      "Mobile app for technicians",
-      "Email support",
-    ],
-    cta: "Start Free Trial",
-  },
-  {
-    name: "Growth",
-    description: "For growing service businesses",
-    price: "$299",
-    period: "/month",
-    highlight: true,
-    features: [
-      "Up to 25 users",
-      "Fleet GPS tracking (50 vehicles)",
-      "Advanced scheduling & dispatch",
-      "Unified inbox & missed call text back",
-      "AI-suggested responses",
-      "Review management",
-      "Work order management",
-      "Invoicing & payments",
-      "Priority support",
-    ],
-    cta: "Start Free Trial",
-  },
-  {
-    name: "Professional",
-    description: "For established operations",
-    price: "$599",
-    period: "/month",
-    highlight: false,
-    features: [
-      "Up to 100 users",
-      "Unlimited fleet tracking",
-      "AI voice receptionist",
-      "After-hours AI answering",
-      "Automated workflows",
-      "Advanced analytics",
-      "API access",
-      "Custom integrations",
-      "Dedicated success manager",
-    ],
-    cta: "Start Free Trial",
-  },
-  {
-    name: "Enterprise",
-    description: "For large organizations",
-    price: "Custom",
-    period: "",
-    highlight: false,
-    features: [
-      "Unlimited users",
-      "Unlimited fleet tracking",
-      "Full AI voice & automation suite",
-      "Custom AI training",
-      "White-label options",
-      "SLA guarantees",
-      "On-premise deployment options",
-      "Dedicated support team",
-      "Custom development",
-    ],
-    cta: "Contact Sales",
-  },
-];
 
 const faqs = [
   {
