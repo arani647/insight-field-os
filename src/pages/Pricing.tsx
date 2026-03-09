@@ -150,6 +150,10 @@ const Pricing = () => {
               Replace multiple subscriptions with one unified platform. Start free, scale as you grow.
             </motion.p>
           </div>
+
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} className="mt-12 max-w-md mx-auto">
+            <img src={heroDashboard} alt="Servinix platform" className="w-full h-auto" loading="eager" />
+          </motion.div>
         </div>
       </section>
 
