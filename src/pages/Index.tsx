@@ -111,9 +111,9 @@ const Index = () => {
         <div className="container relative mx-auto px-4 pt-20 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-              <span className="inline-block mb-6 px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-                Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform. 
-                         ALL THIS AT HALF THE COST     
+              <span className="inline-block mb-6 px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">FINALLY, ONE PLATFORM TO RUN YOUR SERVICE BUSINESS
+
+
               </span>
             </motion.div>
 
@@ -126,14 +126,30 @@ const Index = () => {
 
             <motion.p
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-6 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed">
+              className="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-amber-400">
               
               Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform.
+                          ALL THIS AT HALF THE COST     
+                
+               
+              
+             
+            
+           
+          
+         
+        
+       
+      
+     
+    
+   
+  
+ 
+
             </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}
-              className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               
               <Link to="/contact">
                 <Button variant="hero" size="lg" className="text-base px-8 py-6">
@@ -148,9 +164,7 @@ const Index = () => {
             </motion.div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }}
-            className="mt-16 lg:mt-24 max-w-5xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }} className="mt-16 lg:mt-24 max-w-5xl mx-auto">
             
             <div className="rounded-xl border border-border/50 overflow-hidden glow-primary">
               <img src={heroDashboard} alt="Servinix platform dashboard showing fleet tracking and job management" className="w-full h-auto" loading="eager" />
@@ -163,12 +177,10 @@ const Index = () => {
       <section className="border-b border-border/50 bg-card">
         <div className="container mx-auto px-4 py-16 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, i) =>
-            <motion.div key={stat.label} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center">
+            {stats.map((stat, i) => <motion.div key={stat.label} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center">
                 <div className="font-heading text-3xl md:text-4xl font-bold text-gradient">{stat.value}</div>
                 <div className="mt-2 text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            )}
+              </motion.div>)}
           </div>
         </div>
       </section>
@@ -176,23 +188,11 @@ const Index = () => {
       {/* Core Features */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading
-            badge="Platform"
-            title="Everything your service business needs,"
-            highlight="unified."
-            description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
+          <SectionHeading badge="Platform" title="Everything your service business needs," highlight="unified." description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
           
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {features.map((feature, i) =>
-            <motion.a
-              key={feature.title}
-              href={feature.link}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-              className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
+            {features.map((feature, i) => <motion.a key={feature.title} href={feature.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+            className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
               
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
                   <feature.icon className="h-6 w-6" />
