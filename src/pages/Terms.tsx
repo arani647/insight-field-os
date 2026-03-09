@@ -64,7 +64,7 @@ const Terms = () => {
           <p className="text-muted-foreground leading-relaxed mb-6">We may suspend or terminate access to the services if you violate these Terms. You may stop using the services at any time.</p>
 
           <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Governing Law</h2>
-          <p className="text-muted-foreground leading-relaxed mb-6">These Terms are governed by the laws of the State of California, without regard to conflict of law principles.</p>
+          <p className="text-muted-foreground leading-relaxed mb-6">These Terms are governed by the laws of the State of Delaware, without regard to conflict of law principles.</p>
 
           <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Changes to Terms</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">We may update these Terms from time to time. Updated versions will be posted with a revised effective date. Continued use of the services after changes become effective constitutes acceptance of the revised Terms.</p>
