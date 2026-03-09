@@ -163,11 +163,11 @@ const Index = () => {
       <section className="border-b border-border/50 bg-card">
         <div className="container mx-auto px-4 py-16 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, i) => (
-              <motion.div key={stat.label} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center">
+          {stats.map((stat) => (
+              <div key={stat.label} className="text-center">
                 <div className="font-heading text-3xl md:text-4xl font-bold text-gradient">{stat.value}</div>
                 <div className="mt-2 text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
