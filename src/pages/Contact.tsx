@@ -159,8 +159,8 @@ const Contact = () => {
                   </div>
                   <div className="flex items-start gap-3 p-4 rounded-lg border border-border/50 bg-background">
                     <Checkbox id="smsConsent" checked={formData.smsConsent} onCheckedChange={(checked) => setFormData((prev) => ({ ...prev, smsConsent: checked === true }))} />
-                    <Label htmlFor="smsConsent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
-                      I agree to receive SMS messages from Servinix regarding demos, service notifications, and product updates. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe and HELP for help. See our <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link> and <Link to="/terms" className="text-primary hover:underline">Terms of Service</Link>.
+                     <Label htmlFor="smsConsent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
+                       I agree to receive SMS messages from Servinix related to demos, scheduling, account updates, and service communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe and HELP for help. View our <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link> and <Link to="/terms" className="text-primary hover:underline">Terms of Service</Link>.
                     </Label>
                   </div>
                   <Button type="submit" variant="hero" className="w-full" disabled={isSubmitting}>
