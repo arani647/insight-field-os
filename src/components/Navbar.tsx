@@ -1,14 +1,28 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ServinixLogo from "./ServinixLogo";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+const productLinks = [
+  { label: "Platform Overview", href: "/platform" },
+  { label: "Fleet GPS Tracking", href: "/fleet-gps" },
+  { label: "Field Service Management", href: "/field-service" },
+  { label: "AI Communications", href: "/ai-communications" },
+  { label: "AI Voice Automation", href: "/ai-voice" },
+];
 
 const navLinks = [
-  { label: "Platform", href: "/features" },
+  { label: "Industries", href: "/industries" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -21,6 +35,24 @@ const Navbar = () => {
         <ServinixLogo />
 
         <div className="hidden items-center gap-8 md:flex">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Platform <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="w-56">
+              {productLinks.map((link) => (
+                <DropdownMenuItem key={link.href} asChild>
+                  <Link
+                    to={link.href}
+                    className={location.pathname === link.href ? "text-primary" : ""}
+                  >
+                    {link.label}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -40,7 +72,7 @@ const Navbar = () => {
           </Button>
           <Link to="/contact">
             <Button variant="hero" size="sm">
-              Get a Demo
+              Book Demo
             </Button>
           </Link>
         </div>
@@ -48,6 +80,7 @@ const Navbar = () => {
         <button
           className="text-foreground md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -62,6 +95,18 @@ const Navbar = () => {
             className="border-t border-border/50 bg-background md:hidden"
           >
             <div className="container mx-auto flex flex-col gap-4 px-4 py-6">
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Platform</div>
+              {productLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="text-sm font-medium text-muted-foreground hover:text-primary pl-2"
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <div className="border-t border-border/50 pt-4 mt-2" />
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -73,8 +118,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link to="/contact" onClick={() => setMobileOpen(false)}>
-                <Button variant="hero" className="w-full">
-                  Get a Demo
+                <Button variant="hero" className="w-full mt-4">
+                  Book Demo
                 </Button>
               </Link>
             </div>

@@ -5,21 +5,27 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/50 bg-card">
       <div className="container mx-auto px-4 py-16 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-4">
-          <div className="md:col-span-1">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+          <div className="lg:col-span-2">
             <ServinixLogo />
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              The next-generation operating system for service businesses.
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
+              The AI-native operating system for field service businesses. Replace multiple tools with one unified platform.
             </p>
           </div>
 
           <div>
             <h4 className="font-heading text-sm font-semibold text-foreground mb-4">Platform</h4>
             <ul className="space-y-3">
-              {["Fleet GPS Tracking", "Field Service Management", "Customer Communication", "AI Assistants"].map((item) => (
-                <li key={item}>
-                  <Link to="/features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    {item}
+              {[
+                { label: "Platform Overview", href: "/platform" },
+                { label: "Fleet GPS Tracking", href: "/fleet-gps" },
+                { label: "Field Service Management", href: "/field-service" },
+                { label: "AI Communications", href: "/ai-communications" },
+                { label: "AI Voice Automation", href: "/ai-voice" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link to={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -30,8 +36,10 @@ const Footer = () => {
             <h4 className="font-heading text-sm font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-3">
               {[
+                { label: "Industries", href: "/industries" },
+                { label: "Pricing", href: "/pricing" },
                 { label: "About", href: "/about" },
-                { label: "Contact", href: "/contact" },
+                { label: "Book Demo", href: "/contact" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link to={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">

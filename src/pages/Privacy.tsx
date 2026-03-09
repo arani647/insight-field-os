@@ -3,136 +3,86 @@ import Layout from "@/components/Layout";
 const Privacy = () => {
   return (
     <Layout>
-      <section className="bg-hero-gradient pt-20 pb-16 lg:pt-28">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground">Privacy Policy</h1>
-          <p className="mt-4 text-primary-foreground/70">Last updated: March 8, 2026</p>
-        </div>
-      </section>
+      <div className="container mx-auto px-4 py-24 lg:px-8 lg:py-32">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="font-heading text-4xl font-bold text-foreground mb-2">Privacy Policy</h1>
+          <p className="text-muted-foreground mb-8">Last updated: March 2026</p>
+          <p className="text-muted-foreground leading-relaxed mb-6">Servinix Inc. ("Servinix," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.</p>
 
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-3xl mx-auto prose prose-neutral">
-            <div className="space-y-10 text-muted-foreground leading-relaxed">
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
-                <p>Servinix, Inc. ("Servinix," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at servinix.com, use our platform, or engage with our services (collectively, the "Services").</p>
-                <p className="mt-4">By accessing or using our Services, you agree to this Privacy Policy. If you do not agree with the terms of this policy, please do not access the Services.</p>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Information We Collect</h2>
+          <ul className="text-muted-foreground space-y-2 mb-6 list-disc pl-6">
+            <li><strong className="text-foreground">Personal Information:</strong> Name, email, phone number, company name, and billing information.</li>
+            <li><strong className="text-foreground">Usage Data:</strong> How you interact with our platform.</li>
+            <li><strong className="text-foreground">Device Information:</strong> Browser type, OS, IP address, and device identifiers.</li>
+            <li><strong className="text-foreground">Location Data:</strong> GPS data from vehicles using our fleet tracking features.</li>
+            <li><strong className="text-foreground">Communication Data:</strong> Messages and calls processed through our platform.</li>
+          </ul>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">2. Information We Collect</h2>
-                <h3 className="font-heading text-lg font-semibold text-foreground mb-2">Personal Information</h3>
-                <p>We may collect personally identifiable information that you voluntarily provide when you register for an account, request a demo, subscribe to our newsletter, or contact us. This may include:</p>
-                <ul className="list-disc pl-6 mt-3 space-y-2">
-                  <li>Name, email address, phone number, and company name</li>
-                  <li>Billing and payment information</li>
-                  <li>Job title, fleet size, and business type</li>
-                  <li>Any other information you choose to provide</li>
-                </ul>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">How We Use Information</h2>
+          <ul className="text-muted-foreground space-y-2 mb-6 list-disc pl-6">
+            <li>Provide, maintain, and improve our services</li>
+            <li>Process transactions and send related information</li>
+            <li>Send administrative information, updates, and security alerts</li>
+            <li>Respond to inquiries and provide customer support</li>
+            <li>Monitor and analyze usage patterns</li>
+            <li>Detect, prevent, and address technical issues</li>
+            <li>Comply with legal obligations</li>
+          </ul>
 
-                <h3 className="font-heading text-lg font-semibold text-foreground mt-6 mb-2">Automatically Collected Information</h3>
-                <p>When you access our Services, we automatically collect certain information, including:</p>
-                <ul className="list-disc pl-6 mt-3 space-y-2">
-                  <li>Device information (browser type, operating system, device identifiers)</li>
-                  <li>Log data (IP address, access times, pages viewed, referring URL)</li>
-                  <li>Location data (GPS coordinates from fleet tracking devices, with user consent)</li>
-                  <li>Usage data (features used, actions taken within the platform)</li>
-                </ul>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Cookies and Tracking Technologies</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">We use cookies, web beacons, and similar tracking technologies. You can control cookies through your browser settings.</p>
 
-                <h3 className="font-heading text-lg font-semibold text-foreground mt-6 mb-2">Cookies and Tracking Technologies</h3>
-                <p>We use cookies, web beacons, and similar tracking technologies to collect information about your browsing activities. You can control cookies through your browser settings, though disabling cookies may affect functionality.</p>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">How We Share Information</h2>
+          <ul className="text-muted-foreground space-y-2 mb-6 list-disc pl-6">
+            <li><strong className="text-foreground">Service Providers:</strong> Third-party vendors who perform services on our behalf.</li>
+            <li><strong className="text-foreground">Legal Requirements:</strong> When required by law or legal process.</li>
+            <li><strong className="text-foreground">Business Transfers:</strong> In connection with a merger or acquisition.</li>
+            <li><strong className="text-foreground">With Consent:</strong> When you have given explicit consent.</li>
+          </ul>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">3. How We Use Your Information</h2>
-                <p>We use the information we collect to:</p>
-                <ul className="list-disc pl-6 mt-3 space-y-2">
-                  <li>Provide, maintain, and improve our Services</li>
-                  <li>Process transactions and send related information</li>
-                  <li>Send promotional communications (with your consent)</li>
-                  <li>Respond to your comments, questions, and requests</li>
-                  <li>Monitor and analyze usage trends and preferences</li>
-                  <li>Detect, prevent, and address technical issues and security threats</li>
-                  <li>Comply with legal obligations and enforce our agreements</li>
-                  <li>Develop new products, services, and features</li>
-                </ul>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">SMS Communications</h2>
+          <div className="p-6 rounded-xl border border-border/50 bg-card mb-6">
+            <p className="text-muted-foreground leading-relaxed mb-4">If you provide your mobile phone number and opt in to receive text messages from Servinix, you consent to receive SMS communications related to demos, account notifications, service reminders, and product updates.</p>
+            <ul className="text-muted-foreground space-y-2 list-disc pl-6 mb-4">
+              <li>Message frequency may vary.</li>
+              <li>Message and data rates may apply.</li>
+              <li>You may opt out at any time by replying STOP.</li>
+              <li>For assistance, reply HELP or contact <a href="mailto:support@servinix.com" className="text-primary hover:underline">support@servinix.com</a>.</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mb-2"><strong className="text-foreground">No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</strong></p>
+            <p className="text-muted-foreground leading-relaxed">SMS consent and phone numbers are used only for communication related to Servinix services.</p>
+          </div>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">4. How We Share Your Information</h2>
-                <p>We do not sell your personal information. We may share your information in the following circumstances:</p>
-                <ul className="list-disc pl-6 mt-3 space-y-2">
-                  <li><strong className="text-foreground">Service Providers:</strong> With third-party vendors who perform services on our behalf (hosting, analytics, payment processing, customer support)</li>
-                  <li><strong className="text-foreground">Business Transfers:</strong> In connection with a merger, acquisition, reorganization, or sale of assets</li>
-                  <li><strong className="text-foreground">Legal Requirements:</strong> When required by law, regulation, or legal process</li>
-                  <li><strong className="text-foreground">Protection of Rights:</strong> To protect the rights, property, or safety of Servinix, our users, or the public</li>
-                  <li><strong className="text-foreground">With Consent:</strong> With your consent or at your direction</li>
-                </ul>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Data Security</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">We implement industry-standard security measures including encryption in transit and at rest, access controls, and regular security audits.</p>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">5. Data Security</h2>
-                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These include encryption in transit and at rest, access controls, regular security assessments, and employee training. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Data Retention</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">We retain your personal information for as long as your account is active or as needed to provide services. You may request deletion at any time.</p>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">6. Data Retention</h2>
-                <p>We retain your personal information for as long as necessary to fulfill the purposes for which it was collected, comply with our legal obligations, resolve disputes, and enforce our agreements. When data is no longer needed, we securely delete or anonymize it.</p>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">User Rights</h2>
+          <ul className="text-muted-foreground space-y-2 mb-6 list-disc pl-6">
+            <li><strong className="text-foreground">Access:</strong> Request a copy of your personal information.</li>
+            <li><strong className="text-foreground">Correction:</strong> Request correction of inaccurate information.</li>
+            <li><strong className="text-foreground">Deletion:</strong> Request deletion of your personal information.</li>
+            <li><strong className="text-foreground">Portability:</strong> Request transfer of your data.</li>
+            <li><strong className="text-foreground">Objection:</strong> Object to certain processing.</li>
+          </ul>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">7. Your Rights and Choices</h2>
-                <p>Depending on your location, you may have the following rights regarding your personal information:</p>
-                <ul className="list-disc pl-6 mt-3 space-y-2">
-                  <li><strong className="text-foreground">Access:</strong> Request a copy of your personal information</li>
-                  <li><strong className="text-foreground">Correction:</strong> Request correction of inaccurate or incomplete data</li>
-                  <li><strong className="text-foreground">Deletion:</strong> Request deletion of your personal information</li>
-                  <li><strong className="text-foreground">Portability:</strong> Request a portable copy of your data</li>
-                  <li><strong className="text-foreground">Opt-Out:</strong> Opt out of marketing communications at any time</li>
-                  <li><strong className="text-foreground">Restriction:</strong> Request restriction of processing in certain circumstances</li>
-                </ul>
-                <p className="mt-4">To exercise any of these rights, please contact us at privacy@servinix.com.</p>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Children's Privacy</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">Our services are not directed to individuals under 18. We do not knowingly collect personal information from children.</p>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">8. California Privacy Rights (CCPA)</h2>
-                <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to delete your information, and the right to opt out of the sale of your information. We do not sell personal information.</p>
-              </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Changes to This Policy</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">We may update this Privacy Policy from time to time. We will notify you by posting the new policy and updating the "Last updated" date.</p>
 
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">9. International Data Transfers</h2>
-                <p>Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your information in accordance with applicable data protection laws.</p>
-              </div>
-
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">10. Children's Privacy</h2>
-                <p>Our Services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal information, we will take steps to delete such information.</p>
-              </div>
-
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">11. Third-Party Links</h2>
-                <p>Our Services may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to read the privacy policies of any third-party sites you visit.</p>
-              </div>
-
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">12. Changes to This Policy</h2>
-                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date. We encourage you to review this policy periodically.</p>
-              </div>
-
-              <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">13. Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
-                <div className="mt-4 rounded-xl border border-border/50 bg-card p-6">
-                  <p className="font-semibold text-foreground">Servinix, Inc.</p>
-                  <p className="mt-1">Email: privacy@servinix.com</p>
-                  <p>Website: servinix.com</p>
-                </div>
-              </div>
-            </div>
+          <h2 className="font-heading text-2xl font-bold text-foreground mt-12 mb-4">Contact Information</h2>
+          <div className="text-muted-foreground mb-6">
+            <p>Servinix Inc.</p>
+            <p>Email: <a href="mailto:privacy@servinix.com" className="text-primary hover:underline">privacy@servinix.com</a></p>
+            <p>Phone: (800) 555-1234</p>
+            <p>San Francisco, CA</p>
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 };
