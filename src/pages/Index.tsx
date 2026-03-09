@@ -152,7 +152,7 @@ const Index = () => {
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }} className="mt-16 lg:mt-24 max-w-5xl mx-auto">
             
             <div className="rounded-xl border border-border/50 overflow-hidden glow-primary">
-              <img src={heroDashboard} alt="Servinix platform dashboard showing fleet tracking and job management" className="w-full h-auto" loading="eager" fetchPriority="high" width={1920} height={1080} />
+              <img src={heroDashboard} alt="Servinix platform dashboard showing fleet tracking and job management" className="w-full h-auto" loading="eager" fetchPriority="high" width={1920} height={1080} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1024px" />
             </div>
           </motion.div>
         </div>
