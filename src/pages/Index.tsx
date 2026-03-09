@@ -17,13 +17,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1, y: 0,
-    transition: { delay: i * 0.1, duration: 0.5 },
-  }),
-};
+const LazyMotionSections = lazy(() => import("@/components/MotionSections"));
 
 const features = [
   { icon: MapPin, title: "Fleet GPS Tracking", description: "Real-time visibility into every vehicle and asset. Know where your team is, optimize routes, and reduce fuel costs.", link: "/fleet-gps" },
