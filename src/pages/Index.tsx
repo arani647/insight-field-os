@@ -128,8 +128,9 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
               className="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-amber-400">
               
-              Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform.
-                          ALL THIS AT HALF THE COST     
+              Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform. 
+
+ALL THIS AT HALF THE COST     
                 
                
               
@@ -191,8 +192,7 @@ const Index = () => {
           <SectionHeading badge="Platform" title="Everything your service business needs," highlight="unified." description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
           
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {features.map((feature, i) => <motion.a key={feature.title} href={feature.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-            className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
+            {features.map((feature, i) => <motion.a key={feature.title} href={feature.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
               
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
                   <feature.icon className="h-6 w-6" />
