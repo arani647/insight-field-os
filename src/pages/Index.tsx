@@ -168,7 +168,7 @@ const Index = () => {
       {/* Core Features */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading badge="Platform" title="Everything your service business needs," highlight="unified." description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
+          <SectionHeading badge="Product" title="Everything your service business needs," highlight="unified." description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
           
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {features.map((feature, i) => <motion.a key={feature.title} href={feature.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
