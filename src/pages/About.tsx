@@ -12,12 +12,6 @@ const values = [
   { icon: Rocket, title: "Continuous Innovation", description: "The field service industry is evolving. We're committed to staying ahead with new features, integrations, and capabilities." },
 ];
 
-const team = [
-  { name: "Alex Chen", role: "CEO & Co-Founder", bio: "Former operations leader at a national HVAC company. Built Servinix to solve problems he lived every day." },
-  { name: "Sarah Martinez", role: "CTO & Co-Founder", bio: "Ex-Google engineer with deep expertise in AI and distributed systems. Leads our technical vision." },
-  { name: "Mike Thompson", role: "VP of Product", bio: "15 years in field service software. Obsessed with building tools that technicians actually want to use." },
-  { name: "Lisa Park", role: "VP of Customer Success", bio: "Former service business owner. Ensures every customer achieves their operational goals." },
-];
 
 const About = () => {
   return (
