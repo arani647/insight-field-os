@@ -12,11 +12,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const productLinks = [
-  { label: "Platform Overview", href: "/platform" },
-  { label: "Fleet GPS Tracking", href: "/fleet-gps" },
+  { label: "Product Overview", href: "/product" },
+  { label: "GPS Tracking & Dashcams", href: "/gps-tracking" },
   { label: "Field Service Management", href: "/field-service" },
-  { label: "AI Communications", href: "/ai-communications" },
-  { label: "AI Voice Automation", href: "/ai-voice" },
+  { label: "AI Employee", href: "/ai-employee" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Phones", href: "/phones" },
+  { label: "Text Marketing", href: "/text-marketing" },
 ];
 
 const navLinks = [
