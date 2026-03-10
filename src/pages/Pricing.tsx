@@ -4,7 +4,8 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroDashboard from "@/assets/hero-dashboard.png";
+import heroDashboard from "@/assets/hero-dashboard.webp";
+import heroDashboardFallback from "@/assets/hero-dashboard.png";
 import {
   Accordion,
   AccordionContent,
