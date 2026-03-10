@@ -97,7 +97,7 @@ const Navbar = () => {
             className="border-t border-border/50 bg-background md:hidden"
           >
             <div className="container mx-auto flex flex-col gap-4 px-4 py-6">
-              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Platform</div>
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Product</div>
               {productLinks.map((link) => (
                 <Link
                   key={link.href}

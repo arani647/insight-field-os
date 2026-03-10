@@ -136,9 +136,9 @@ const Index = () => {
                   Book Demo <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link to="/platform">
+              <Link to="/product">
                 <Button variant="hero-outline" size="lg" className="text-base px-8 py-6 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10">
-                  See Platform
+                  See Product
                 </Button>
               </Link>
             </motion.div>
