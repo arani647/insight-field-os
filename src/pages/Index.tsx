@@ -113,24 +113,16 @@ const Index = () => {
 
 
 
-            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
-            className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-[1.1] tracking-tight">
-              
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-[1.1] tracking-tight animate-hero-fade-up [animation-delay:100ms]">
               Run Your Service Business on{" "}
               <span className="text-gradient">One AI-Native Platform</span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-amber-400">
+            <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-amber-400 animate-hero-fade-up [animation-delay:200ms]">
               Servinix combines fleet tracking, field service management, and AI customer communication into a single operational platform.
-            </motion.p>
+            </p>
 
-
-
-
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-hero-fade-up [animation-delay:300ms]">
               <Link to="/contact">
                 <Button variant="hero" size="lg" className="text-base px-8 py-6">
                   Book Demo <ArrowRight className="ml-2 h-4 w-4" />
@@ -141,15 +133,15 @@ const Index = () => {
                   See Product
                 </Button>
               </Link>
-            </motion.div>
+            </div>
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }} className="mt-16 lg:mt-24 max-w-5xl mx-auto">
+          <div className="mt-16 lg:mt-24 max-w-5xl mx-auto animate-hero-fade-up [animation-delay:500ms]">
             
             <div className="rounded-xl border border-border/50 overflow-hidden glow-primary">
               <img src={heroDashboard} alt="Servinix platform dashboard showing fleet tracking and job management" className="w-full h-auto" loading="eager" fetchPriority="high" width={1920} height={1080} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1024px" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

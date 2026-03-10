@@ -97,3 +97,8 @@
 .animate-fade-up {
   animation: fade-up 0.5s ease-out;
 }
+
+.animate-hero-fade-up {
+  opacity: 0;
+  animation: fade-up 0.5s ease-out forwards;
+}
