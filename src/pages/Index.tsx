@@ -26,10 +26,10 @@ const fadeUp = {
 };
 
 const features = [
-{ icon: MapPin, title: "Fleet GPS Tracking", description: "Real-time visibility into every vehicle and asset. Know where your team is, optimize routes, and reduce fuel costs.", link: "/fleet-gps" },
+{ icon: MapPin, title: "GPS Tracking & Dashcams", description: "Real-time visibility into every vehicle and asset. AI dashcams, driver safety scores, and route optimization.", link: "/gps-tracking" },
 { icon: Wrench, title: "Field Service Management", description: "Schedule, dispatch, and manage jobs from one place. From work orders to invoicing—streamlined.", link: "/field-service" },
-{ icon: MessageSquare, title: "AI Communications", description: "Unified inbox for calls, texts, and reviews. Never miss a lead or leave a customer waiting.", link: "/ai-communications" },
-{ icon: Brain, title: "AI Voice Automation", description: "AI receptionist, after-hours answering, and intelligent workflow automation.", link: "/ai-voice" }];
+{ icon: MessageSquare, title: "AI Employee", description: "Your autonomous AI employee that responds, schedules, and sells—24/7, just like your best rep.", link: "/ai-employee" },
+{ icon: Brain, title: "Reviews & Marketing", description: "Automated review collection, text marketing campaigns, and reputation management on autopilot.", link: "/reviews" }];
 
 
 const stats = [
