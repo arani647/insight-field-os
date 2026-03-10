@@ -90,22 +90,6 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading badge="Team" title="Leadership" highlight="team" description="The people building the future of field service operations." />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {team.map((member, i) => (
-              <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center">
-                <div className="w-24 h-24 rounded-full bg-muted mx-auto mb-4" />
-                <h3 className="font-heading font-semibold text-foreground">{member.name}</h3>
-                <div className="text-sm text-primary mb-3">{member.role}</div>
-                <p className="text-sm text-muted-foreground">{member.bio}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
