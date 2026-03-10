@@ -68,8 +68,11 @@ const About = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 They saw that existing solutions were either too simple (basic scheduling tools) or too complex (enterprise systems that cost six figures and take months to implement). There was nothing in between for growing service businesses that needed power without complexity.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 So they built Servinix: an AI-native platform that combines fleet tracking, field service management, and customer communication into one unified system. It's powerful enough to run a 100-truck operation, but simple enough to set up in a week.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Finally, as AI makes software creation simpler, we want to shatter the price barriers for adoption. Software costs are artificially inflated because investors demand high 'gross margins' in SaaS. All that is going out of the window now. We will start with 50% off your current bill. Our goal is to do better over time!
               </p>
             </motion.div>
           </div>
