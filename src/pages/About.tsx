@@ -12,12 +12,6 @@ const values = [
   { icon: Rocket, title: "Continuous Innovation", description: "The field service industry is evolving. We're committed to staying ahead with new features, integrations, and capabilities." },
 ];
 
-const team = [
-  { name: "Alex Chen", role: "CEO & Co-Founder", bio: "Former operations leader at a national HVAC company. Built Servinix to solve problems he lived every day." },
-  { name: "Sarah Martinez", role: "CTO & Co-Founder", bio: "Ex-Google engineer with deep expertise in AI and distributed systems. Leads our technical vision." },
-  { name: "Mike Thompson", role: "VP of Product", bio: "15 years in field service software. Obsessed with building tools that technicians actually want to use." },
-  { name: "Lisa Park", role: "VP of Customer Success", bio: "Former service business owner. Ensures every customer achieves their operational goals." },
-];
 
 const About = () => {
   return (
@@ -90,22 +84,6 @@ const About = () => {
                   <h3 className="font-heading text-lg font-semibold text-foreground mb-2">{value.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 lg:py-32 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading badge="Team" title="Leadership" highlight="team" description="The people building the future of field service operations." />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {team.map((member, i) => (
-              <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center">
-                <div className="w-24 h-24 rounded-full bg-muted mx-auto mb-4" />
-                <h3 className="font-heading font-semibold text-foreground">{member.name}</h3>
-                <div className="text-sm text-primary mb-3">{member.role}</div>
-                <p className="text-sm text-muted-foreground">{member.bio}</p>
               </motion.div>
             ))}
           </div>
