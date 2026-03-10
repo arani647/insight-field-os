@@ -26,10 +26,10 @@ const fadeUp = {
 };
 
 const features = [
-{ icon: MapPin, title: "Fleet GPS Tracking", description: "Real-time visibility into every vehicle and asset. Know where your team is, optimize routes, and reduce fuel costs.", link: "/fleet-gps" },
+{ icon: MapPin, title: "GPS Tracking & Dashcams", description: "Real-time visibility into every vehicle and asset. AI dashcams, driver safety scores, and route optimization.", link: "/gps-tracking" },
 { icon: Wrench, title: "Field Service Management", description: "Schedule, dispatch, and manage jobs from one place. From work orders to invoicing—streamlined.", link: "/field-service" },
-{ icon: MessageSquare, title: "AI Communications", description: "Unified inbox for calls, texts, and reviews. Never miss a lead or leave a customer waiting.", link: "/ai-communications" },
-{ icon: Brain, title: "AI Voice Automation", description: "AI receptionist, after-hours answering, and intelligent workflow automation.", link: "/ai-voice" }];
+{ icon: MessageSquare, title: "AI Employee", description: "Your autonomous AI employee that responds, schedules, and sells—24/7, just like your best rep.", link: "/ai-employee" },
+{ icon: Brain, title: "Reviews & Marketing", description: "Automated review collection, text marketing campaigns, and reputation management on autopilot.", link: "/reviews" }];
 
 
 const stats = [
@@ -136,9 +136,9 @@ const Index = () => {
                   Book Demo <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link to="/platform">
+              <Link to="/product">
                 <Button variant="hero-outline" size="lg" className="text-base px-8 py-6 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10">
-                  See Platform
+                  See Product
                 </Button>
               </Link>
             </motion.div>
@@ -168,7 +168,7 @@ const Index = () => {
       {/* Core Features */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading badge="Platform" title="Everything your service business needs," highlight="unified." description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
+          <SectionHeading badge="Product" title="Everything your service business needs," highlight="unified." description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
           
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {features.map((feature, i) => <motion.a key={feature.title} href={feature.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">

@@ -14,14 +14,16 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-heading text-sm font-semibold text-foreground mb-4">Platform</h4>
+            <h4 className="font-heading text-sm font-semibold text-foreground mb-4">Product</h4>
             <ul className="space-y-3">
               {[
-                { label: "Platform Overview", href: "/platform" },
-                { label: "Fleet GPS Tracking", href: "/fleet-gps" },
+                { label: "Product Overview", href: "/product" },
+                { label: "GPS Tracking & Dashcams", href: "/gps-tracking" },
                 { label: "Field Service Management", href: "/field-service" },
-                { label: "AI Communications", href: "/ai-communications" },
-                { label: "AI Voice Automation", href: "/ai-voice" },
+                { label: "AI Employee", href: "/ai-employee" },
+                { label: "Reviews", href: "/reviews" },
+                { label: "Phones", href: "/phones" },
+                { label: "Text Marketing", href: "/text-marketing" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link to={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">

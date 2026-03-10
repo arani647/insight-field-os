@@ -12,11 +12,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const productLinks = [
-  { label: "Platform Overview", href: "/platform" },
-  { label: "Fleet GPS Tracking", href: "/fleet-gps" },
+  { label: "Product Overview", href: "/product" },
+  { label: "GPS Tracking & Dashcams", href: "/gps-tracking" },
   { label: "Field Service Management", href: "/field-service" },
-  { label: "AI Communications", href: "/ai-communications" },
-  { label: "AI Voice Automation", href: "/ai-voice" },
+  { label: "AI Employee", href: "/ai-employee" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Phones", href: "/phones" },
+  { label: "Text Marketing", href: "/text-marketing" },
 ];
 
 const navLinks = [
@@ -37,7 +39,7 @@ const Navbar = () => {
         <div className="hidden items-center gap-8 md:flex">
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              Platform <ChevronDown className="h-4 w-4" />
+              Product <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-56">
               {productLinks.map((link) => (
@@ -95,7 +97,7 @@ const Navbar = () => {
             className="border-t border-border/50 bg-background md:hidden"
           >
             <div className="container mx-auto flex flex-col gap-4 px-4 py-6">
-              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Platform</div>
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Product</div>
               {productLinks.map((link) => (
                 <Link
                   key={link.href}

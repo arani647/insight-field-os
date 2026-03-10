@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
 import { motion } from "framer-motion";
-import { Wrench, Calendar, ClipboardList, Users, Smartphone, FileText, RefreshCw, CreditCard, Bell } from "lucide-react";
+import { Wrench, Calendar, ClipboardList, Users, Smartphone, FileText, RefreshCw, CreditCard, Bell, ArrowRight, Megaphone, DollarSign } from "lucide-react";
 
 const features = [
   { icon: Calendar, title: "Smart Scheduling", description: "Drag-and-drop scheduling with AI-powered suggestions. Optimize technician schedules based on skills, location, and availability." },
@@ -14,8 +15,23 @@ const features = [
   { icon: Bell, title: "Job Status Visibility", description: "Real-time status updates as jobs progress. Know when techs arrive, complete work, and need support." },
   { icon: RefreshCw, title: "Recurring Services", description: "Set up maintenance contracts and recurring appointments. Automatic scheduling and reminders." },
   { icon: FileText, title: "Estimates & Proposals", description: "Create professional estimates on-site. Convert approved estimates to work orders with one click." },
-  { icon: CreditCard, title: "Invoicing", description: "Generate invoices automatically upon job completion. Accept payments in the field or send payment links." },
+  { icon: CreditCard, title: "Invoicing & Payments", description: "Generate invoices automatically upon job completion. Accept payments in the field or send payment links." },
   { icon: Wrench, title: "Inventory & Parts", description: "Track parts usage per job. Manage truck inventory and automate reordering." },
+];
+
+const subPages = [
+  {
+    icon: Megaphone,
+    title: "Get Noticed",
+    description: "Build your online presence, earn trust with professional branding, and make it easy for customers to find and choose you over competitors.",
+    link: "/field-service/get-noticed",
+  },
+  {
+    icon: DollarSign,
+    title: "Get Paid Faster",
+    description: "Accept payments online, in-person, or automatically. Stop chasing checks and get paid 4x faster with seamless invoicing and payment collection.",
+    link: "/field-service/get-paid",
+  },
 ];
 
 const workflowSteps = [
@@ -47,8 +63,47 @@ const FieldService = () => {
         columns={3}
       />
 
-      {/* Workflow Section */}
+      {/* Sub-pages */}
       <section className="py-24 lg:py-32 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading
+            badge="Solutions"
+            title="Grow your business,"
+            highlight="your way"
+            description="Specialized solutions to help you get noticed and get paid faster."
+          />
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {subPages.map((page, i) => (
+              <motion.div
+                key={page.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <Link
+                  to={page.link}
+                  className="group block rounded-xl border border-border/50 bg-background p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary h-full"
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-6">
+                    <page.icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="font-heading text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                    {page.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">{page.description}</p>
+                  <span className="inline-flex items-center text-sm text-primary font-medium">
+                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  </span>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Workflow Section */}
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeading
             badge="Workflow"
@@ -65,7 +120,7 @@ const FieldService = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="relative p-6 rounded-xl border border-border/50 bg-background"
+                  className="relative p-6 rounded-xl border border-border/50 bg-card"
                 >
                   <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
                     {item.step}
