@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="hidden items-center gap-8 md:flex">
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              Platform <ChevronDown className="h-4 w-4" />
+              Product <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-56">
               {productLinks.map((link) => (
