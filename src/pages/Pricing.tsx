@@ -85,23 +85,21 @@ const Pricing = () => {
             highlight="questions"
             description="Everything you need to know about Servinix pricing and plans."
           />
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, i) => (
-                <AccordionItem
-                  key={i}
-                  value={`item-${i}`}
-                  className="border border-border/50 rounded-xl px-6 bg-card"
-                >
-                  <AccordionTrigger className="text-left font-heading font-semibold text-foreground hover:no-underline">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqs.map((faq, i) => (
+              <details
+                key={i}
+                className="group border border-border/50 rounded-xl px-6 bg-card"
+              >
+                <summary className="flex flex-1 items-center justify-between py-4 font-heading font-semibold text-foreground cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <span className="text-left">{faq.question}</span>
+                  <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200 group-open:rotate-180" />
+                </summary>
+                <div className="pb-4 text-sm text-muted-foreground">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
