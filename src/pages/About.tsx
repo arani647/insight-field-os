@@ -43,15 +43,26 @@ const About = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Our Mission</h2>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">The Backbone of the Real Economy</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Field service businesses are the backbone of the economy. HVAC technicians, plumbers, electricians, and countless other professionals keep our homes and businesses running. Yet they're often stuck with fragmented, outdated software that creates more work instead of reducing it.
+                Field service businesses power the real economy.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                We started Servinix because we believe these businesses deserve better. They deserve a single platform that handles everything—from knowing where their trucks are to managing jobs to communicating with customers. And they deserve AI that actually helps, not just buzzwords.
+                HVAC technicians, plumbers, electricians, and contractors keep homes comfortable, businesses running, and infrastructure working every day.
               </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Yet the software they rely on was built for a different era — before AI, before connected vehicles, and before modern automation.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Most service companies still run their operations across multiple disconnected systems:
+              </p>
+              <ul className="text-lg text-muted-foreground leading-relaxed mb-6 list-disc list-inside space-y-2">
+                <li>scheduling software</li>
+                <li>fleet tracking tools</li>
+                <li>customer communication platforms</li>
+              </ul>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our mission is to help service businesses operate more efficiently, grow more profitably, and deliver exceptional customer experiences—without adding complexity or overhead.
+                Servinix was created to change that.
               </p>
             </motion.div>
           </div>
