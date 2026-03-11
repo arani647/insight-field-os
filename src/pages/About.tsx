@@ -71,6 +71,42 @@ const About = () => {
 
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">The Servinix Platform</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Servinix brings together the core systems that service businesses rely on every day into one operational platform.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-12">
+                Instead of stitching together multiple tools, service businesses can run their operations on a single system designed for the AI era.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {[
+                { icon: MapPin, title: "Fleet GPS Tracking", description: "Real-time vehicle visibility, route monitoring, and technician location intelligence." },
+                { icon: ClipboardList, title: "Field Service Management", description: "Scheduling, dispatch, job tracking, estimates, and invoicing." },
+                { icon: Bot, title: "AI Service Assistant", description: "Automation for customer communication, appointment scheduling, and service follow-ups." },
+              ].map((item, i) => (
+                <motion.div key={item.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                    <item.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-lg text-muted-foreground leading-relaxed text-center font-medium">
+              Together these systems form the Servinix AI-native operations platform.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
+
+        <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Why We Built Servinix</h2>
