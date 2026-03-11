@@ -169,6 +169,41 @@ const About = () => {
         </div>
       </section>
 
+      {/* The Servinix Architecture */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-16">The Servinix Architecture</h2>
+            </motion.div>
+
+            <div className="flex flex-col items-center gap-0">
+              {[
+                { icon: MapPin, label: "Fleet GPS Tracking" },
+                { icon: ClipboardList, label: "Field Service Management" },
+                { icon: Bot, label: "AI Service Assistant" },
+              ].map((item, i) => (
+                <motion.div key={item.label} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} className="flex flex-col items-center">
+                  <div className="flex items-center gap-3 rounded-xl border border-border bg-card px-8 py-4 shadow-sm">
+                    <item.icon className="h-5 w-5 text-primary" />
+                    <span className="font-heading text-lg font-semibold text-foreground">{item.label}</span>
+                  </div>
+                  <div className="h-8 w-px bg-border" />
+                </motion.div>
+              ))}
+
+              <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.5 }} className="rounded-xl border-2 border-primary bg-primary/5 px-10 py-5 shadow-md">
+                <span className="font-heading text-xl font-bold text-primary">Servinix Platform</span>
+              </motion.div>
+            </div>
+
+            <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.6 }} className="mt-12 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              Servinix connects the core systems service businesses rely on every day into one unified operational platform.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
       {/* The Economics of Software Are Changing */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
