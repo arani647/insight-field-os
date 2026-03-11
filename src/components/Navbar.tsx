@@ -13,7 +13,7 @@ import {
 
 const productLinks = [
   { label: "Product Overview", href: "/product" },
-  { label: "GPS Tracking & Dashcams", href: "/gps-tracking" },
+  { label: "Fleet GPS & Dashcams", href: "/gps-tracking" },
   { label: "Field Service Management", href: "/field-service" },
   { label: "AI Employee", href: "/ai-employee" },
 ];
