@@ -310,6 +310,45 @@ const FieldService = () => {
         </div>
       </section>
 
+      {/* AI Service Assistant */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading
+            badge="AI Assistant"
+            title="AI Service Assistant for"
+            highlight="Your Operations"
+            description="Servinix includes a built-in AI assistant that works across scheduling, customer communication, and job workflows."
+          />
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {[
+              { icon: Calendar, title: "AI Scheduling Assistant", description: "Automatically book jobs based on technician availability." },
+              { icon: MessageSquare, title: "Customer Communication", description: "Respond to messages, calls, and inquiries automatically." },
+              { icon: TrendingUp, title: "Quote Follow-Ups", description: "AI contacts customers who have not responded to estimates." },
+              { icon: Clock, title: "Technician ETA Updates", description: "AI informs customers when technicians are on the way." },
+            ].map((card, i) => (
+              <motion.div
+                key={card.title}
+                custom={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: (j: number) => ({ opacity: 1, y: 0, transition: { delay: j * 0.1, duration: 0.5 } }),
+                }}
+                className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
+                  <card.icon className="h-6 w-6" />
+                </div>
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Sub-pages */}
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
