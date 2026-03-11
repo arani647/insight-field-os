@@ -273,11 +273,11 @@ const HomeBelowFold = () => {
         <div className="container relative mx-auto px-4 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              Ready to transform your{" "}
-              <span className="text-gradient">operations?</span>
+              See How Servinix Simplifies{" "}
+              <span className="text-gradient">Service Operations</span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto">
-              See how Servinix can reduce manual work, improve accountability, and accelerate your growth.
+              Discover how one unified platform can replace multiple tools and help your service business run more efficiently.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact">
@@ -285,9 +285,9 @@ const HomeBelowFold = () => {
                   Book Demo <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link to="/pricing">
+              <Link to="/contact">
                 <Button variant="outline" size="lg" className="text-base px-10 py-6">
-                  View Pricing
+                  Contact Sales
                 </Button>
               </Link>
             </div>
