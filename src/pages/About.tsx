@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Target, Users, Lightbulb, Rocket } from "lucide-react";
+import { ArrowRight, Target, Users, Lightbulb, Rocket, MapPin, ClipboardList, Bot } from "lucide-react";
 
 const values = [
   { icon: Target, title: "Operational Excellence", description: "We obsess over the details that make service businesses run smoothly. Every feature is designed to eliminate friction and improve outcomes." },
