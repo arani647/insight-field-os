@@ -112,16 +112,25 @@ const About = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Why We Built Servinix</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Our founders came from the world of field service operations. They lived the pain of juggling multiple software subscriptions, manually moving data between systems, and missing customer calls because no one could answer.
+                Our founders spent years working around field service operations and saw how fragmented the software landscape had become.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                They saw that existing solutions were either too simple (basic scheduling tools) or too complex (enterprise systems that cost six figures and take months to implement). There was nothing in between for growing service businesses that needed power without complexity.
+                Service businesses were forced to juggle multiple subscriptions, manually move information between systems, and respond to customers using disconnected tools.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                So they built Servinix: an AI-native platform that combines fleet tracking, field service management, and customer communication into one unified system. It's powerful enough to run a 100-truck operation, but simple enough to set up in a week.
+                Existing solutions fell into two extremes.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Basic scheduling tools lacked operational intelligence.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Enterprise systems were powerful but expensive and complex to implement.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                There was nothing designed for growing service businesses that needed power without complexity.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Finally, as AI makes software creation simpler, we want to shatter the price barriers for adoption. Software costs are artificially inflated because investors demand high 'gross margins' in SaaS. All that is going out of the window now. We will start with 50% off your current bill. Our goal is to do better over time!
+                Servinix was built to close that gap.
               </p>
             </motion.div>
           </div>
