@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Wrench, Calendar, ClipboardList, Users, Smartphone, FileText, RefreshCw, CreditCard, Bell, ArrowRight, Megaphone, DollarSign, CheckCircle2 } from "lucide-react";
+import { Wrench, Calendar, ClipboardList, Users, Smartphone, FileText, RefreshCw, CreditCard, Bell, ArrowRight, Megaphone, DollarSign, CheckCircle2, Truck, MapPin, Camera, Route, Clock, Navigation } from "lucide-react";
 
 const features = [
   { icon: Calendar, title: "Smart Scheduling", description: "Drag-and-drop scheduling with AI-powered suggestions. Optimize technician schedules based on skills, location, and availability." },
@@ -218,6 +218,94 @@ const FieldService = () => {
             >
               Servinix was designed from day one as an AI-native operational platform for service businesses.
             </motion.p>
+          </div>
+        </div>
+      </section>
+
+      {/* Built-In Fleet Intelligence */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <SectionHeading
+              badge="Fleet Intelligence"
+              title="Built-In Fleet"
+              highlight="Intelligence"
+              description="Most field service platforms rely on separate fleet tracking systems. Servinix integrates vehicle telemetry directly into the operational platform."
+            />
+
+            {/* Flow Diagram */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="rounded-2xl border border-border/50 bg-card p-8 md:p-10 mb-10"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-7 items-center gap-4 md:gap-2">
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <Truck className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Vehicle</span>
+                  <span className="text-xs text-muted-foreground">OBD + GPS</span>
+                </div>
+                <div className="hidden md:flex items-center justify-center md:col-span-1">
+                  <ArrowRight className="h-5 w-5 text-primary" />
+                </div>
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <Navigation className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Servinix Platform</span>
+                  <span className="text-xs text-muted-foreground">Telemetry engine</span>
+                </div>
+                <div className="hidden md:flex items-center justify-center md:col-span-1">
+                  <ArrowRight className="h-5 w-5 text-primary" />
+                </div>
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <Users className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Dispatcher</span>
+                  <span className="text-xs text-muted-foreground">Real-time visibility</span>
+                </div>
+                <div className="hidden md:flex items-center justify-center md:col-span-1">
+                  <ArrowRight className="h-5 w-5 text-primary" />
+                </div>
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <Clock className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Customer ETA</span>
+                  <span className="text-xs text-muted-foreground">Auto-notification</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Feature List */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl border border-border/50 bg-background p-8 md:p-10 max-w-3xl mx-auto"
+            >
+              <ul className="space-y-4">
+                {[
+                  "OBD device-based GPS tracking",
+                  "Real-time vehicle location",
+                  "Dashcam safety monitoring",
+                  "Route optimization",
+                  "Technician ETA predictions",
+                  "Arrival notifications to customers",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                    <span className="text-foreground leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
         </div>
       </section>
