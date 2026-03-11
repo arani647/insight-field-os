@@ -110,6 +110,32 @@ const HomeBelowFold = () => {
         </div>
       </section>
 
+      {/* Unified Platform Cards */}
+      <section className="py-24 lg:py-32 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading
+            badge="Platform"
+            title="A Unified Platform for"
+            highlight="Service Operations"
+          />
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { icon: MapPin, title: "Fleet GPS Tracking", description: "Track vehicles in real time, improve routing efficiency, reduce fuel costs, and gain visibility into field operations.", link: "/fleet-gps" },
+              { icon: Wrench, title: "Field Service Management", description: "Schedule jobs, dispatch technicians, track work progress, and manage service workflows from a single system.", link: "/field-service-management" },
+              { icon: Brain, title: "AI Assistant", description: "Use AI to handle customer communication, job follow-ups, reminders, and support tasks so your team can focus on the work that matters.", link: "/ai-assistant" },
+            ].map((card, i) => (
+              <motion.a key={card.title} href={card.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
+                  <card.icon className="h-6 w-6" />
+                </div>
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">{card.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
+              </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Core Features */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
