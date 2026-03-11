@@ -45,6 +45,7 @@ const App = () => (
             <Route path="/field-service/get-paid" element={<FieldServiceGetPaid />} />
             <Route path="/ai-employee" element={<AIEmployee />} />
             <Route path="/ai-communications" element={<AIEmployee />} />
+            <Route path="/ai-assistant" element={<AIAssistant />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/phones" element={<Phones />} />
             <Route path="/ai-voice" element={<Phones />} />
