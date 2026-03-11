@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import PlatformTriangle from "@/components/PlatformTriangle";
+import pricingTriangle from "@/assets/pricing-triangle.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import {
