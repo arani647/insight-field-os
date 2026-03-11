@@ -215,17 +215,17 @@ const HomeBelowFold = () => {
       {/* Industries */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading badge="Industries" title="Purpose-built for" highlight="service businesses" description="From HVAC to pest control, Servinix is designed for the unique needs of field service operations." />
-          <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
+          <SectionHeading badge="Industries" title="Industries We" highlight="Serve" description="Servinix is designed for field service businesses that manage technicians, vehicles, and customer jobs every day." />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {industries.map((industry, i) => (
-              <motion.div key={industry.name} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="flex items-center gap-3 px-5 py-3 rounded-full border border-border/50 bg-card hover:border-primary/30 transition-colors">
-                <industry.icon className="h-5 w-5 text-primary" />
-                <span className="text-sm font-medium text-foreground">{industry.name}</span>
-              </motion.div>
+              <motion.a key={industry.name} href={`/industries/${industry.slug}`} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="group rounded-xl border border-border/50 bg-card-gradient p-6 hover:border-primary/30 transition-all duration-300 hover:glow-primary block text-center">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-4">
+                  <industry.icon className="h-6 w-6" />
+                </div>
+                <h3 className="font-heading text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{industry.name}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{industry.description}</p>
+              </motion.a>
             ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link to="/industries" className="text-sm text-primary hover:underline">See all industries →</Link>
           </div>
         </div>
       </section>
