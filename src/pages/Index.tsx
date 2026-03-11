@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import heroDashboard from "@/assets/hero-dashboard-opt.webp";
 import heroDashboardSmall from "@/assets/hero-dashboard-sm-opt.webp";
+import heroDashboardMobile from "@/assets/hero-dashboard-mobile.webp";
 import heroDashboardFallback from "@/assets/hero-dashboard.png";
 import { ArrowRight } from "lucide-react";
 
@@ -47,7 +48,7 @@ const Index = () => {
           <div className="mt-16 lg:mt-24 max-w-5xl mx-auto animate-hero-fade-up [animation-delay:500ms]">
             <div className="rounded-xl border border-border/50 overflow-hidden glow-primary">
               <picture>
-                <source type="image/webp" srcSet={`${heroDashboardSmall} 768w, ${heroDashboard} 1344w`} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1024px" />
+                <source type="image/webp" srcSet={`${heroDashboardMobile} 700w, ${heroDashboardSmall} 768w, ${heroDashboard} 1344w`} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1024px" />
                 <img src={heroDashboardFallback} alt="Servinix platform dashboard showing fleet tracking and job management" className="w-full h-auto" loading="eager" fetchPriority="high" width={1344} height={768} />
               </picture>
             </div>
