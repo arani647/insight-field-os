@@ -4,7 +4,7 @@ import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
-import { Bot, Zap, CalendarCheck, MessageSquareText, PhoneMissed, BrainCircuit, Clock, Users, TrendingUp, CheckCircle2, MapPin, Navigation, Bell, ArrowRight, PhoneIncoming } from "lucide-react";
+import { Bot, Zap, CalendarCheck, MessageSquareText, PhoneMissed, BrainCircuit, Clock, Users, TrendingUp, CheckCircle2, MapPin, Navigation, Bell, ArrowRight, PhoneIncoming, BarChart3, Wrench } from "lucide-react";
 
 const aiCards = [
   {
