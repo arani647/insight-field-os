@@ -136,6 +136,34 @@ const HomeBelowFold = () => {
         </div>
       </section>
 
+      {/* Why Servinix */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading
+            badge="Benefits"
+            title="Why Service Businesses Choose"
+            highlight="Servinix"
+          />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              { icon: Zap, title: "Replace multiple tools with one platform" },
+              { icon: Shield, title: "Reduce operational complexity" },
+              { icon: Clock, title: "Improve dispatch and response times" },
+              { icon: Eye, title: "Increase visibility across vehicles, jobs, and teams" },
+              { icon: Brain, title: "Automate routine communication with AI" },
+              { icon: TrendingUp, title: "Scale operations without adding administrative overhead" },
+            ].map((benefit, i) => (
+              <motion.div key={benefit.title} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <benefit.icon className="h-5 w-5" />
+                </div>
+                <h3 className="font-heading text-base font-semibold text-foreground pt-2">{benefit.title}</h3>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Core Features */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
