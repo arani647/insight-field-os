@@ -2,8 +2,8 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
-import heroDashboard from "@/assets/hero-dashboard.webp";
-import heroDashboardSmall from "@/assets/hero-dashboard-sm.webp";
+import heroDashboard from "@/assets/hero-dashboard-opt.webp";
+import heroDashboardSmall from "@/assets/hero-dashboard-sm-opt.webp";
 import heroDashboardFallback from "@/assets/hero-dashboard.png";
 import { ArrowRight } from "lucide-react";
 
