@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
 import {
   MapPin, Wrench, MessageSquare, Brain, ArrowRight,
-  Zap, Eye, TrendingUp, Shield, Clock, Users,
+  Zap, Eye, TrendingUp, Shield, Clock,
   Building2, Thermometer, Droplets, Bug, Trees,
   Waves, ShieldCheck,
 } from "lucide-react";
@@ -38,14 +38,6 @@ const stats = [
   { value: "2hrs", label: "Saved per tech per day" },
 ];
 
-const benefits = [
-  { icon: Eye, title: "Complete Visibility", description: "See every vehicle, technician, and job in real time across your entire operation." },
-  { icon: Zap, title: "Intelligent Automation", description: "AI handles scheduling conflicts, customer follow-ups, and routine decisions automatically." },
-  { icon: TrendingUp, title: "Accelerated Growth", description: "Close more jobs, improve reviews, and scale without adding back-office overhead." },
-  { icon: Shield, title: "Enterprise-Grade, SMB-Friendly", description: "Advanced technology without enterprise cost, contracts, or complexity." },
-  { icon: Clock, title: "Dispatch to Completion", description: "End-to-end workflow from job assignment to completion to customer follow-up." },
-  { icon: Users, title: "Team Accountability", description: "Track performance, ensure quality, and empower your team with better data." },
-];
 
 const industries = [
   { icon: Thermometer, name: "HVAC", slug: "hvac", description: "Heating, ventilation, and air conditioning service management." },
@@ -127,13 +119,15 @@ const HomeBelowFold = () => {
               { icon: Wrench, title: "Field Service Management", description: "Schedule jobs, dispatch technicians, track work progress, and manage service workflows from a single system.", link: "/field-service-management" },
               { icon: Brain, title: "AI Assistant", description: "Use AI to handle customer communication, job follow-ups, reminders, and support tasks so your team can focus on the work that matters.", link: "/ai-assistant" },
             ].map((card, i) => (
-              <motion.a key={card.title} href={card.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
-                  <card.icon className="h-6 w-6" />
-                </div>
-                <h3 className="font-heading text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">{card.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
-              </motion.a>
+              <Link key={card.title} to={card.link}>
+                <motion.div custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
+                    <card.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">{card.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
@@ -199,13 +193,15 @@ const HomeBelowFold = () => {
           <SectionHeading badge="Product" title="Everything your service business needs," highlight="unified." description="Stop juggling disconnected tools. Servinix brings fleet tracking, job management, and customer communication into one intelligent platform." />
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {features.map((feature, i) => (
-              <motion.a key={feature.title} href={feature.link} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary block">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
-                  <feature.icon className="h-6 w-6" />
-                </div>
-                <h3 className="font-heading text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
-              </motion.a>
+              <Link key={feature.title} to={feature.link}>
+                <motion.div custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
+                    <feature.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
@@ -213,25 +209,27 @@ const HomeBelowFold = () => {
 
 
       {/* Industries */}
-      <section className="py-24 lg:py-32">
+      <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeading badge="Industries" title="Industries We" highlight="Serve" description="Servinix is designed for field service businesses that manage technicians, vehicles, and customer jobs every day." />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {industries.map((industry, i) => (
-              <motion.a key={industry.name} href={`/industries/${industry.slug}`} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="group rounded-xl border border-border/50 bg-card-gradient p-6 hover:border-primary/30 transition-all duration-300 hover:glow-primary block text-center">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-4">
-                  <industry.icon className="h-6 w-6" />
-                </div>
-                <h3 className="font-heading text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{industry.name}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{industry.description}</p>
-              </motion.a>
+              <Link key={industry.name} to={`/industries/${industry.slug}`}>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="group rounded-xl border border-border/50 bg-card-gradient p-6 hover:border-primary/30 transition-all duration-300 hover:glow-primary text-center h-full">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-4">
+                    <industry.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{industry.name}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{industry.description}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 lg:py-32 bg-card">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeading badge="Testimonials" title="Trusted by service businesses" highlight="nationwide" description="See what our customers say about transforming their operations with Servinix." />
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -249,7 +247,7 @@ const HomeBelowFold = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32">
+      <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeading badge="FAQ" title="Frequently asked" highlight="questions" description="Everything you need to know about Servinix." />
           <div className="max-w-3xl mx-auto">
@@ -266,7 +264,7 @@ const HomeBelowFold = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-24 lg:py-32 relative overflow-hidden bg-card">
+      <section className="py-24 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-primary/10 blur-[150px]" />
         </div>
