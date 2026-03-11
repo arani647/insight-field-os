@@ -74,13 +74,8 @@ const Pricing = () => {
             </motion.p>
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} className="mt-16 lg:mt-24 max-w-5xl mx-auto">
-            <div className="rounded-xl border border-border/50 overflow-hidden glow-primary">
-              <picture>
-                <source type="image/webp" srcSet={heroDashboard} />
-                <img src={heroDashboardFallback} alt="Servinix platform dashboard" className="w-full h-auto" loading="eager" width={1920} height={1080} />
-              </picture>
-            </div>
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="mt-16 lg:mt-20 max-w-2xl mx-auto">
+            <PlatformTriangle />
           </motion.div>
         </div>
       </section>
