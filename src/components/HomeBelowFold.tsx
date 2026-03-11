@@ -7,6 +7,7 @@ import {
   MapPin, Wrench, MessageSquare, Brain, ArrowRight,
   Zap, Eye, TrendingUp, Shield, Clock, Users,
   Building2, Thermometer, Droplets, Bug, Trees,
+  Waves, ShieldCheck,
 } from "lucide-react";
 import {
   Accordion,
