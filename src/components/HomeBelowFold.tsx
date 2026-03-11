@@ -48,12 +48,14 @@ const benefits = [
 ];
 
 const industries = [
-  { icon: Thermometer, name: "HVAC" },
-  { icon: Droplets, name: "Plumbing" },
-  { icon: Zap, name: "Electrical" },
-  { icon: Trees, name: "Landscaping" },
-  { icon: Bug, name: "Pest Control" },
-  { icon: Building2, name: "Cleaning" },
+  { icon: Thermometer, name: "HVAC", slug: "hvac", description: "Heating, ventilation, and air conditioning service management." },
+  { icon: Droplets, name: "Plumbing", slug: "plumbing", description: "Residential and commercial plumbing operations." },
+  { icon: Zap, name: "Electrical", slug: "electrical", description: "Electrical contracting and maintenance services." },
+  { icon: Building2, name: "Commercial Cleaning", slug: "commercial-cleaning", description: "Janitorial and facility cleaning operations." },
+  { icon: Trees, name: "Landscaping", slug: "landscaping", description: "Lawn care, landscaping, and grounds maintenance." },
+  { icon: Waves, name: "Pool Service", slug: "pool-service", description: "Pool maintenance, repair, and cleaning services." },
+  { icon: ShieldCheck, name: "Security Systems", slug: "security-systems", description: "Security system installation and monitoring." },
+  { icon: Bug, name: "Pest Control", slug: "pest-control", description: "Pest management and extermination services." },
 ];
 
 const testimonials = [
