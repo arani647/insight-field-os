@@ -12,43 +12,10 @@ const values = [
   { icon: Rocket, title: "Continuous Innovation", description: "The field service industry is evolving. We're committed to staying ahead with new features, integrations, and capabilities." },
 ];
 
-      <section className="py-24 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">The Economics of Software Are Changing</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                For years, service businesses have been forced to pay thousands of dollars per month for fragmented software stacks that combine scheduling tools, communication systems, and fleet tracking platforms.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                These prices were shaped by the traditional SaaS model where companies focused on maximizing gross margins rather than minimizing customer costs.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Artificial intelligence is changing that.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                As software becomes easier to build and automate, the cost of delivering powerful platforms should fall — not rise.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Servinix is built with this belief at its core.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Our goal is simple:
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-medium">
-                Deliver more capability than legacy platforms at dramatically better economics.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                We start by offering to beat your current software bill by 50% or more, and over time we intend to push that even further.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
 const About = () => {
   return (
     <Layout>
+      {/* Hero */}
       <section className="relative overflow-hidden bg-hero-gradient">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
@@ -72,6 +39,7 @@ const About = () => {
         </div>
       </section>
 
+      {/* The Backbone of the Real Economy */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
@@ -102,6 +70,7 @@ const About = () => {
         </div>
       </section>
 
+      {/* The Servinix Platform */}
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
@@ -138,6 +107,7 @@ const About = () => {
         </div>
       </section>
 
+      {/* Why We Built Servinix */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
@@ -169,6 +139,7 @@ const About = () => {
         </div>
       </section>
 
+      {/* Built for the AI Era */}
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
@@ -198,7 +169,43 @@ const About = () => {
         </div>
       </section>
 
+      {/* The Economics of Software Are Changing */}
       <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">The Economics of Software Are Changing</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                For years, service businesses have been forced to pay thousands of dollars per month for fragmented software stacks that combine scheduling tools, communication systems, and fleet tracking platforms.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                These prices were shaped by the traditional SaaS model where companies focused on maximizing gross margins rather than minimizing customer costs.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Artificial intelligence is changing that.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                As software becomes easier to build and automate, the cost of delivering powerful platforms should fall — not rise.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Servinix is built with this belief at its core.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Our goal is simple:
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-medium">
+                Deliver more capability than legacy platforms at dramatically better economics.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We start by offering to beat your current software bill by 50% or more, and over time we intend to push that even further.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeading badge="Values" title="What drives" highlight="our work" description="The principles that guide how we build products and serve customers." />
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -215,6 +222,7 @@ const About = () => {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
