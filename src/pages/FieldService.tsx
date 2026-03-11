@@ -140,7 +140,8 @@ const FieldService = () => {
       </section>
 
 
-        <FeatureSection
+      <FeatureSection
+        badge="Features"
         title="Everything you need to"
         highlight="run your operations"
         description="Purpose-built for home and field service businesses."
