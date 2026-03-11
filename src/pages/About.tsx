@@ -23,11 +23,18 @@ const About = () => {
         <div className="container relative mx-auto px-4 pt-20 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.1] tracking-tight">
-              About <span className="text-gradient">Servinix</span>
+              Rebuilding Field Service Software for the <span className="text-gradient">AI Era</span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="mt-6 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto">
-              We're building the AI-native operating system for field service businesses.
+              Servinix is the AI-native operating system for field service businesses, combining fleet tracking, field service management, and intelligent automation into one unified platform.
             </motion.p>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="mt-10">
+              <Link to="/contact">
+                <Button variant="hero" size="lg" className="text-base px-10 py-6">
+                  Book Demo <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
