@@ -46,13 +46,59 @@ const workflowSteps = [
 const FieldService = () => {
   return (
     <Layout>
-      <ProductPageHero
-        badge="Field Service Management"
-        icon={Wrench}
-        title="Manage Every Job from"
-        highlight="Schedule to Completion"
-        description="End-to-end field service management that streamlines scheduling, dispatch, work orders, and invoicing in one unified platform."
-      />
+      <section className="relative overflow-hidden bg-hero-gradient">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
+          <div className="absolute bottom-1/4 right-1/4 h-64 w-64 rounded-full bg-primary/5 blur-[100px]" />
+        </div>
+        <div className="container relative mx-auto px-4 pt-20 pb-16 lg:px-8 lg:pt-32 lg:pb-24">
+          <div className="max-w-3xl mx-auto text-center">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+              <span className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                <Wrench className="h-4 w-4" />
+                Field Service Management
+              </span>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
+              className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.1] tracking-tight"
+            >
+              Field Service Management — Built for the <span className="text-gradient">AI Era</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
+              className="mt-6 text-lg md:text-xl font-medium text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed"
+            >
+              Most field service software was built before AI. Servinix combines scheduling, dispatch, and job management with an AI Service Assistant and real-time fleet intelligence.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.25 }}
+              className="mt-4 text-base text-primary-foreground/60 max-w-2xl mx-auto leading-relaxed"
+            >
+              Platforms like Jobber, Housecall Pro, and ServiceTitan help manage jobs, technicians, and invoices. Servinix goes further — bringing AI automation, vehicle telemetry, and customer communication into one operational platform.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}
+              className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            >
+              <Link to="/contact">
+                <Button variant="hero" size="lg" className="text-base px-8 py-6">
+                  Book Demo <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link to="/platform">
+                <Button variant="hero-outline" size="lg" className="text-base px-8 py-6 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10">
+                  See Platform Overview
+                </Button>
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       <FeatureSection
         badge="Features"
