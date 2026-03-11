@@ -164,6 +164,32 @@ const HomeBelowFold = () => {
         </div>
       </section>
 
+      {/* How It Works */}
+      <section className="py-24 lg:py-32 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading
+            badge="How It Works"
+            title="How Servinix"
+            highlight="Works"
+          />
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              { step: "01", title: "Connect Your Operations", description: "Bring together vehicles, technicians, customers, and jobs into one connected system." },
+              { step: "02", title: "Run Daily Operations", description: "Schedule work, dispatch teams, track vehicles, and manage service workflows from a unified platform." },
+              { step: "03", title: "Automate With AI", description: "Let AI assistants handle reminders, follow-ups, and customer responses to keep operations running smoothly." },
+            ].map((item, i) => (
+              <motion.div key={item.step} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary font-heading font-bold text-lg mb-5">
+                  {item.step}
+                </div>
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Core Features */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
