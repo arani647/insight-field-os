@@ -207,7 +207,7 @@ const About = () => {
       {/* Values */}
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading badge="Values" title="What drives" highlight="our work" description="The principles that guide how we build products and serve customers." />
+          <SectionHeading badge="Principles" title="Our" highlight="Principles" description="" />
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {values.map((value, i) => (
               <motion.div key={value.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-4">
