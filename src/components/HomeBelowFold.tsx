@@ -208,25 +208,6 @@ const HomeBelowFold = () => {
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="py-24 lg:py-32 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading badge="Why Servinix" title="Built for companies that operate in the" highlight="physical world." description="Enterprise-grade visibility, automation, and intelligence—without enterprise cost, contracts, or complexity." />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {benefits.map((benefit, i) => (
-              <motion.div key={benefit.title} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <benefit.icon className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="font-heading text-base font-semibold text-foreground mb-2">{benefit.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Industries */}
       <section className="py-24 lg:py-32">
