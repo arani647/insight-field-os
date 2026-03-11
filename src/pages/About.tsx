@@ -261,13 +261,18 @@ const About = () => {
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Join us on the journey</h2>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Join the Next Generation of Service Businesses</h2>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
-              Whether you're a service business looking to modernize or a talented builder who wants to make an impact, we'd love to hear from you.
+              Servinix is building the future of field service software. See how one AI-native platform can simplify operations and help your business grow.
             </p>
-            <Link to="/contact">
-              <Button variant="hero" size="lg" className="text-base px-10 py-6">Book a Demo <ArrowRight className="ml-2 h-4 w-4" /></Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to="/contact">
+                <Button variant="hero" size="lg" className="text-base px-10 py-6">Book Demo <ArrowRight className="ml-2 h-4 w-4" /></Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="hero-outline" size="lg" className="text-base px-10 py-6">Contact Sales</Button>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
