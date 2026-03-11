@@ -100,6 +100,46 @@ const FieldService = () => {
         </div>
       </section>
 
+      {/* Everything You Expect */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading
+            badge="Core Capabilities"
+            title="Everything You Expect from"
+            highlight="Modern Field Service Software"
+            description=""
+          />
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {[
+              { icon: Calendar, title: "Scheduling and Dispatch", description: "Schedule jobs, assign technicians, and manage daily routes from a unified dispatch board." },
+              { icon: ClipboardList, title: "Job Tracking", description: "Track every job from estimate to completion with real-time status updates." },
+              { icon: FileText, title: "Estimates and Invoices", description: "Create professional quotes, convert them into jobs, and generate invoices automatically." },
+              { icon: Users, title: "Customer Management", description: "Maintain complete customer records, job history, and service notes in one system." },
+            ].map((card, i) => (
+              <motion.div
+                key={card.title}
+                custom={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: (j: number) => ({ opacity: 1, y: 0, transition: { delay: j * 0.1, duration: 0.5 } }),
+                }}
+                className="group rounded-xl border border-border/50 bg-card-gradient p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
+                  <card.icon className="h-6 w-6" />
+                </div>
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       <FeatureSection
         badge="Features"
         title="Everything you need to"
