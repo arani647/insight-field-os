@@ -16,9 +16,6 @@ const productLinks = [
   { label: "GPS Tracking & Dashcams", href: "/gps-tracking" },
   { label: "Field Service Management", href: "/field-service" },
   { label: "AI Employee", href: "/ai-employee" },
-  { label: "Reviews", href: "/reviews" },
-  { label: "Phones", href: "/phones" },
-  { label: "Text Marketing", href: "/text-marketing" },
 ];
 
 const navLinks = [
