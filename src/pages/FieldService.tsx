@@ -5,10 +5,6 @@ import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import FeatureSection from "@/components/FeatureSection";
-import CTASection from "@/components/CTASection";
-import SectionHeading from "@/components/SectionHeading";
-import { motion } from "framer-motion";
 import { Wrench, Calendar, ClipboardList, Users, Smartphone, FileText, RefreshCw, CreditCard, Bell, ArrowRight, Megaphone, DollarSign } from "lucide-react";
 
 const features = [
