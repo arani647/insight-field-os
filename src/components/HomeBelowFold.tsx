@@ -209,18 +209,20 @@ const HomeBelowFold = () => {
 
 
       {/* Industries */}
-      <section className="py-24 lg:py-32">
+      <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeading badge="Industries" title="Industries We" highlight="Serve" description="Servinix is designed for field service businesses that manage technicians, vehicles, and customer jobs every day." />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {industries.map((industry, i) => (
-              <motion.a key={industry.name} href={`/industries/${industry.slug}`} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="group rounded-xl border border-border/50 bg-card-gradient p-6 hover:border-primary/30 transition-all duration-300 hover:glow-primary block text-center">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-4">
-                  <industry.icon className="h-6 w-6" />
-                </div>
-                <h3 className="font-heading text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{industry.name}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{industry.description}</p>
-              </motion.a>
+              <Link key={industry.name} to={`/industries/${industry.slug}`}>
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="group rounded-xl border border-border/50 bg-card-gradient p-6 hover:border-primary/30 transition-all duration-300 hover:glow-primary text-center h-full">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-4">
+                    <industry.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{industry.name}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{industry.description}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
