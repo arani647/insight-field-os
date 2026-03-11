@@ -75,8 +75,8 @@ const Pricing = () => {
             </motion.p>
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="mt-16 lg:mt-20 max-w-2xl mx-auto">
-            <PlatformTriangle />
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="mt-16 lg:mt-20 max-w-3xl mx-auto">
+            <img src={pricingTriangle} alt="Servinix combines Fleet GPS Tracking, Field Service Management, and Personal AI Assistant into one platform at half the cost" className="w-full h-auto" />
           </motion.div>
         </div>
       </section>
