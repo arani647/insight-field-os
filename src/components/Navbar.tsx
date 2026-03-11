@@ -84,13 +84,9 @@ const Navbar = () => {
         </button>
       </div>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="border-t border-border/50 bg-background md:hidden"
+      {mobileOpen && (
+          <div
+            className="border-t border-border/50 bg-background md:hidden animate-fade-up"
           >
             <div className="container mx-auto flex flex-col gap-4 px-4 py-6">
               <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Product</div>
@@ -121,9 +117,8 @@ const Navbar = () => {
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
     </nav>
   );
 };
