@@ -18,12 +18,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { label: "Product Overview", href: "/product" },
-                { label: "GPS Tracking & Dashcams", href: "/gps-tracking" },
+                { label: "Fleet GPS & Dashcams", href: "/gps-tracking" },
                 { label: "Field Service Management", href: "/field-service" },
-                { label: "AI Employee", href: "/ai-employee" },
-                { label: "Reviews", href: "/reviews" },
-                { label: "Phones", href: "/phones" },
-                { label: "Text Marketing", href: "/text-marketing" },
+                { label: "AI Service Assistant", href: "/ai-assistant" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link to={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
