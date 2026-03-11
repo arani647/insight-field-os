@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import ProductPageHero from "@/components/ProductPageHero";
+import FeatureSection from "@/components/FeatureSection";
+import CTASection from "@/components/CTASection";
+import SectionHeading from "@/components/SectionHeading";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
