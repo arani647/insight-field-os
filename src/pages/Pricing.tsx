@@ -62,7 +62,8 @@ const Pricing = () => {
               animate={{ opacity: 1, y: 0 }}
               className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.1] tracking-tight"
             >
-              Simple, Transparent <span className="text-gradient">Pricing</span>
+              All the essentials — without paying for{" "}
+              <span className="text-gradient">three separate platforms</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -70,7 +71,7 @@ const Pricing = () => {
               transition={{ delay: 0.1 }}
               className="mt-6 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto"
             >
-              Replace multiple subscriptions with one unified platform. Start free, scale as you grow.
+              Many service businesses end up paying for separate systems for fleet tracking, job management, and customer communication. Servinix combines these capabilities into one platform with simpler economics.
             </motion.p>
           </div>
 
