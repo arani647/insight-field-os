@@ -38,14 +38,6 @@ const stats = [
   { value: "2hrs", label: "Saved per tech per day" },
 ];
 
-const benefits = [
-  { icon: Eye, title: "Complete Visibility", description: "See every vehicle, technician, and job in real time across your entire operation." },
-  { icon: Zap, title: "Intelligent Automation", description: "AI handles scheduling conflicts, customer follow-ups, and routine decisions automatically." },
-  { icon: TrendingUp, title: "Accelerated Growth", description: "Close more jobs, improve reviews, and scale without adding back-office overhead." },
-  { icon: Shield, title: "Enterprise-Grade, SMB-Friendly", description: "Advanced technology without enterprise cost, contracts, or complexity." },
-  { icon: Clock, title: "Dispatch to Completion", description: "End-to-end workflow from job assignment to completion to customer follow-up." },
-  { icon: Users, title: "Team Accountability", description: "Track performance, ensure quality, and empower your team with better data." },
-];
 
 const industries = [
   { icon: Thermometer, name: "HVAC", slug: "hvac", description: "Heating, ventilation, and air conditioning service management." },
