@@ -349,6 +349,54 @@ const FieldService = () => {
         </div>
       </section>
 
+      {/* Turn Operational Signals Into Booked Jobs */}
+      <section className="py-24 lg:py-32 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <SectionHeading
+              badge="Signal-Based Automation"
+              title="Turn Operational Signals Into"
+              highlight="Booked Jobs"
+              description="Servinix continuously monitors service history, vehicle routes, and customer activity to detect opportunities for new work."
+            />
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              {[
+                { icon: Bell, title: "Maintenance Reminder", description: "AI contacts customers when seasonal maintenance is due." },
+                { icon: TrendingUp, title: "Quote Follow-Up", description: "AI reaches out to customers who have not accepted estimates." },
+                { icon: Wrench, title: "Technician Nearby", description: "AI offers service when a technician is already in the neighborhood." },
+              ].map((card, i) => (
+                <motion.div
+                  key={card.title}
+                  custom={i}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={{
+                    hidden: { opacity: 0, y: 30 },
+                    visible: (j: number) => ({ opacity: 1, y: 0, transition: { delay: j * 0.1, duration: 0.5 } }),
+                  }}
+                  className="group rounded-xl border border-border/50 bg-background p-8 hover:border-primary/30 transition-all duration-300 hover:glow-primary"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary mb-5">
+                    <card.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
+                </motion.div>
+              ))}
+            </div>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center text-lg font-medium text-gradient"
+            >
+              Servinix converts operational data into automated revenue opportunities.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
       {/* Sub-pages */}
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
