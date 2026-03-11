@@ -86,6 +86,30 @@ const HomeBelowFold = () => {
         </div>
       </section>
 
+      {/* Three Essential Systems */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <SectionHeading
+            badge="Platform"
+            title="Three Essential Systems."
+            highlight="One Platform."
+            description="Most service businesses end up stitching together multiple tools — one for fleet tracking, another for dispatch and job management, and yet another for customer communication. Servinix brings these essential capabilities together into one unified platform."
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="max-w-2xl mx-auto"
+          >
+            <PlatformTriangle />
+            <p className="mt-8 text-center text-sm text-muted-foreground max-w-lg mx-auto leading-relaxed">
+              One platform instead of three separate systems — designed for simplicity and better economics.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Core Features */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
