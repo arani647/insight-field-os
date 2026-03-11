@@ -13,6 +13,7 @@ const FieldService = lazy(() => import("./pages/FieldService"));
 const FieldServiceGetNoticed = lazy(() => import("./pages/FieldServiceGetNoticed"));
 const FieldServiceGetPaid = lazy(() => import("./pages/FieldServiceGetPaid"));
 const AIEmployee = lazy(() => import("./pages/AIEmployee"));
+const AIAssistant = lazy(() => import("./pages/AIAssistant"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const Phones = lazy(() => import("./pages/Phones"));
 const TextMarketing = lazy(() => import("./pages/TextMarketing"));
