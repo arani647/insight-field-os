@@ -13,6 +13,7 @@ const FieldService = lazy(() => import("./pages/FieldService"));
 const FieldServiceGetNoticed = lazy(() => import("./pages/FieldServiceGetNoticed"));
 const FieldServiceGetPaid = lazy(() => import("./pages/FieldServiceGetPaid"));
 const AIEmployee = lazy(() => import("./pages/AIEmployee"));
+const AIAssistant = lazy(() => import("./pages/AIAssistant"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const Phones = lazy(() => import("./pages/Phones"));
 const TextMarketing = lazy(() => import("./pages/TextMarketing"));
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/field-service/get-paid" element={<FieldServiceGetPaid />} />
             <Route path="/ai-employee" element={<AIEmployee />} />
             <Route path="/ai-communications" element={<AIEmployee />} />
+            <Route path="/ai-assistant" element={<AIAssistant />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/phones" element={<Phones />} />
             <Route path="/ai-voice" element={<Phones />} />
