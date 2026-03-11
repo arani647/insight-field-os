@@ -24,6 +24,14 @@ export default defineConfig(({ mode }) => ({
         manualChunks: {
           'framer-motion': ['framer-motion'],
           'react-query': ['@tanstack/react-query'],
+          'react-vendor': ['react', 'react-dom'],
+          'router': ['react-router-dom'],
+          'radix': [
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-tooltip',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-slot',
+          ],
         },
       },
     },
