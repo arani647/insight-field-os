@@ -55,6 +55,14 @@ const operationBullets = [
   "Follow up on maintenance and repairs",
 ];
 
+const gpsBullets = [
+  "Tell customers when technicians are on the way",
+  "Provide real-time ETA updates",
+  "Notify customers if a technician is running late",
+  "Automatically send arrival alerts",
+  'Reduce inbound "Where is my technician?" calls',
+];
+
 const alwaysWorkingBullets = [
   "Works day and night",
   "Handles multiple conversations at once",
