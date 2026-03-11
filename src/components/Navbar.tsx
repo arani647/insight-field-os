@@ -15,7 +15,7 @@ const productLinks = [
   { label: "Product Overview", href: "/product" },
   { label: "Fleet GPS & Dashcams", href: "/gps-tracking" },
   { label: "Field Service Management", href: "/field-service" },
-  { label: "AI Employee", href: "/ai-employee" },
+  { label: "AI Service Assistant", href: "/ai-assistant" },
 ];
 
 const navLinks = [
