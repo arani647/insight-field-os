@@ -229,7 +229,7 @@ const HomeBelowFold = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 lg:py-32 bg-card">
+      <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <SectionHeading badge="Testimonials" title="Trusted by service businesses" highlight="nationwide" description="See what our customers say about transforming their operations with Servinix." />
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
