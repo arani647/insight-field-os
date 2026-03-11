@@ -109,6 +109,79 @@ const FieldService = () => {
         columns={3}
       />
 
+      {/* Why Traditional FSM Falls Short */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <SectionHeading
+              badge="The Difference"
+              title="Why Traditional Field Service Software"
+              highlight="Falls Short"
+              description="Most field service platforms were designed to manage workflows like scheduling jobs, sending invoices, and dispatching technicians. While tools like Jobber help service businesses quote, schedule, manage jobs, and get paid, they were not originally designed as AI-native operational systems."
+            />
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="grid md:grid-cols-2 gap-6 mb-12"
+            >
+              {/* Traditional Column */}
+              <div className="rounded-2xl border border-border/50 bg-card p-8 md:p-10">
+                <h3 className="font-heading text-xl font-semibold text-muted-foreground mb-6">Traditional FSM Software</h3>
+                <ul className="space-y-4">
+                  {[
+                    "Built for scheduling and invoicing",
+                    "Limited automation",
+                    "No unified AI assistant",
+                    "Separate fleet tracking tools",
+                    "No integrated vehicle telemetry",
+                    "Requires multiple software systems",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="mt-1.5 h-2 w-2 rounded-full bg-muted-foreground/40 shrink-0" />
+                      <span className="text-muted-foreground leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Servinix Column */}
+              <div className="rounded-2xl border border-primary/30 bg-primary/5 p-8 md:p-10 glow-primary">
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-6">
+                  Servinix <span className="text-gradient">AI-Native</span> Platform
+                </h3>
+                <ul className="space-y-4">
+                  {[
+                    "AI Service Assistant built into operations",
+                    "Automated scheduling and communication",
+                    "Real-time technician visibility",
+                    "Integrated fleet GPS and vehicle telemetry",
+                    "Signal-based automation",
+                    "One platform instead of multiple tools",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                      <span className="text-foreground leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center text-lg font-medium text-gradient"
+            >
+              Servinix was designed from day one as an AI-native operational platform for service businesses.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
       {/* Sub-pages */}
       <section className="py-24 lg:py-32 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
