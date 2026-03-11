@@ -105,6 +105,34 @@ const About = () => {
         </div>
       </section>
 
+      <section className="py-24 lg:py-32 bg-card">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Built for the AI Era</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Most field service platforms were designed long before AI became practical for everyday operations.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Servinix was built differently.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Our platform integrates AI directly into operational workflows so service businesses can automate communication, scheduling, and follow-ups.
+              </p>
+              <ul className="text-lg text-muted-foreground leading-relaxed mb-6 list-disc list-inside space-y-2">
+                <li>AI responding to customer inquiries</li>
+                <li>Automated appointment scheduling</li>
+                <li>Quote follow-ups</li>
+                <li>Technician arrival notifications</li>
+                <li>Maintenance reminders</li>
+              </ul>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Servinix AI understands real operational context because it connects directly to fleet data, job schedules, and customer history.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
