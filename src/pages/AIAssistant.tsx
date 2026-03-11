@@ -164,7 +164,103 @@ const AIAssistant = () => {
         </div>
       </section>
 
-      {/* Automation Examples */}
+      {/* AI That Knows Where Your Technicians Are */}
+      <section className="py-24 lg:py-32">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-12"
+            >
+              <span className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                <MapPin className="h-4 w-4" />
+                GPS-Connected AI
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                AI That Knows Where Your <span className="text-gradient">Technicians Are</span>
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                Because Servinix AI connects directly to fleet GPS tracking and job schedules, it understands the real-time status of your field operations.
+              </p>
+              <p className="mt-3 text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                Unlike generic chatbots, the AI Assistant knows where technicians are, what jobs they are working on, and when they will arrive.
+              </p>
+            </motion.div>
+
+            {/* Flow Diagram */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="rounded-2xl border border-border/50 bg-background p-8 md:p-10 mb-10"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-7 items-center gap-4 md:gap-2">
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <PhoneIncoming className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Customer</span>
+                  <span className="text-xs text-muted-foreground">Asks for ETA</span>
+                </div>
+                <div className="hidden md:flex items-center justify-center md:col-span-1">
+                  <ArrowRight className="h-5 w-5 text-primary" />
+                </div>
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <Bot className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">AI Assistant</span>
+                  <span className="text-xs text-muted-foreground">Processes request</span>
+                </div>
+                <div className="hidden md:flex items-center justify-center md:col-span-1">
+                  <ArrowRight className="h-5 w-5 text-primary" />
+                </div>
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <Navigation className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">GPS Location</span>
+                  <span className="text-xs text-muted-foreground">Real-time tracking</span>
+                </div>
+                <div className="hidden md:flex items-center justify-center md:col-span-1">
+                  <ArrowRight className="h-5 w-5 text-primary" />
+                </div>
+                <div className="flex flex-col items-center text-center md:col-span-1">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary mb-3">
+                    <Bell className="h-7 w-7" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">ETA Sent</span>
+                  <span className="text-xs text-muted-foreground">Auto-response</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Bullet List */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="rounded-2xl border border-border/50 bg-background p-8 md:p-10 max-w-3xl mx-auto"
+            >
+              <ul className="space-y-4">
+                {gpsBullets.map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                    <span className="text-foreground leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+
       <FeatureSection
         badge="Automation Examples"
         title="See AI in"
