@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
 import {
   MapPin, Wrench, MessageSquare, Brain, ArrowRight,
-  Zap, Eye, TrendingUp, Shield, Clock, Users,
+  Zap, Eye, TrendingUp, Shield, Clock,
   Building2, Thermometer, Droplets, Bug, Trees,
   Waves, ShieldCheck,
 } from "lucide-react";
