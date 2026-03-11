@@ -517,9 +517,12 @@ const FieldService = () => {
       </section>
 
       <CTASection
-        title="Streamline your field"
-        highlight="operations"
-        description="See how Servinix FSM can reduce manual work and improve job completion rates."
+        title="Upgrade Your Field Service"
+        highlight="Platform"
+        description="See how Servinix combines field service management, fleet intelligence, and AI automation in one platform."
+        primaryCTA="Book Demo"
+        secondaryCTA="See Platform"
+        secondaryLink="/platform"
       />
     </Layout>
   );
