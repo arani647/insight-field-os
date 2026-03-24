@@ -1,8 +1,10 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Terms = () => {
   return (
     <Layout>
+      <SEO title="Terms of Service" description="Servinix terms of service. Read about your rights and responsibilities when using the Servinix platform." canonicalUrl="/terms" />
       <div className="container mx-auto px-4 py-24 lg:px-8 lg:py-32">
         <div className="max-w-3xl mx-auto">
           <h1 className="font-heading text-4xl font-bold text-foreground mb-2">Terms of Service</h1>

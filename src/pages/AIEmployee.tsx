@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
@@ -39,6 +40,7 @@ const capabilities = [
 const AIEmployee = () => {
   return (
     <Layout>
+      <SEO title="AI Employee" description="Autonomous AI that responds to leads, schedules appointments, and sells 24/7. Get 30% more sales with your AI employee." canonicalUrl="/ai-employee" />
       <ProductPageHero
         badge="AI Employee"
         icon={Bot}

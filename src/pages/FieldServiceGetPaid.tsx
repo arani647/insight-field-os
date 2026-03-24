@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
@@ -28,6 +29,7 @@ const stats = [
 const FieldServiceGetPaid = () => {
   return (
     <Layout>
+      <SEO title="Get Paid Faster" description="Collect payments 4x faster with online payments, tap-to-pay, automatic billing, and professional invoicing for service businesses." canonicalUrl="/field-service/get-paid" />
       <ProductPageHero
         badge="Get Paid Faster"
         icon={DollarSign}

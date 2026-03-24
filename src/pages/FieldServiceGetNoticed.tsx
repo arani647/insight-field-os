@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
@@ -27,6 +28,7 @@ const socialProof = [
 const FieldServiceGetNoticed = () => {
   return (
     <Layout>
+      <SEO title="Get Noticed" description="Build your online presence with professional websites, review management, local SEO, and automated marketing for service businesses." canonicalUrl="/field-service/get-noticed" />
       <ProductPageHero
         badge="Get Noticed"
         icon={Megaphone}

@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
@@ -28,6 +29,7 @@ const stats = [
 const Phones = () => {
   return (
     <Layout>
+      <SEO title="AI Phones & VoIP" description="VoIP phone system with AI receptionist, call transcription, missed call text back, and smart routing for service businesses." canonicalUrl="/phones" />
       <ProductPageHero
         badge="Phones"
         icon={Phone}

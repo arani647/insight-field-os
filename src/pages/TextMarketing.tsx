@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
@@ -28,6 +29,7 @@ const stats = [
 const TextMarketing = () => {
   return (
     <Layout>
+      <SEO title="Text Marketing" description="AI-powered text marketing with 98% open rates. Create campaigns, automate follow-ups, and turn messages into booked jobs." canonicalUrl="/text-marketing" />
       <ProductPageHero
         badge="Text Marketing"
         icon={Send}
