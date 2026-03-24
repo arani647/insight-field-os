@@ -83,6 +83,7 @@ const fadeUp = {
 const AIAssistant = () => {
   return (
     <Layout>
+      <SEO title="AI Assistant" description="Your AI service assistant works 24/7 to communicate with customers, schedule appointments, answer questions, and generate more booked jobs." canonicalUrl="/ai-assistant" />
       <ProductPageHero
         badge="AI Assistant"
         icon={Bot}

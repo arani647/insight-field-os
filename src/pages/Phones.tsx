@@ -29,6 +29,7 @@ const stats = [
 const Phones = () => {
   return (
     <Layout>
+      <SEO title="AI Phones & VoIP" description="VoIP phone system with AI receptionist, call transcription, missed call text back, and smart routing for service businesses." canonicalUrl="/phones" />
       <ProductPageHero
         badge="Phones"
         icon={Phone}

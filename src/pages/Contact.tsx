@@ -70,6 +70,7 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO title="Contact & Book Demo" description="Book a demo of Servinix. See how AI-native fleet tracking, field service management, and automation can transform your business." canonicalUrl="/contact" />
       <section className="relative overflow-hidden bg-hero-gradient">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />

@@ -47,6 +47,7 @@ const workflowSteps = [
 const FieldService = () => {
   return (
     <Layout>
+      <SEO title="Field Service Management" description="Schedule, dispatch, and manage field service operations. Work orders, invoicing, payments, and mobile workflows in one platform." canonicalUrl="/field-service" />
       <section className="relative overflow-hidden bg-hero-gradient">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />

@@ -45,6 +45,7 @@ const faqs = [
 const Pricing = () => {
   return (
     <Layout>
+      <SEO title="Pricing" description="Simple, transparent pricing for Servinix. Fleet GPS tracking, field service management, and AI tools starting at one affordable price." canonicalUrl="/pricing" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-hero-gradient">
         <div className="absolute inset-0 opacity-30">

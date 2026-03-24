@@ -29,6 +29,7 @@ const stats = [
 const Reviews = () => {
   return (
     <Layout>
+      <SEO title="Reviews Management" description="Double your Google reviews with automated, AI-powered review collection. Build trust, rank higher, and win more customers." canonicalUrl="/reviews" />
       <ProductPageHero
         badge="Reviews"
         icon={Star}

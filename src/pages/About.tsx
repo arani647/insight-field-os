@@ -16,6 +16,7 @@ const values = [
 const About = () => {
   return (
     <Layout>
+      <SEO title="About" description="Servinix is rebuilding field service software for the AI era. Learn about our mission to unify fleet tracking, service management, and automation." canonicalUrl="/about" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-hero-gradient">
         <div className="absolute inset-0 opacity-30">

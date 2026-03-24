@@ -66,6 +66,7 @@ const fadeUp = {
 const Product = () => {
   return (
     <Layout>
+      <SEO title="Platform Overview" description="Explore the full Servinix platform — GPS tracking, field service management, AI employees, phones, reviews, and text marketing in one unified system." canonicalUrl="/product" />
       <ProductPageHero
         badge="Product"
         icon={Layers}

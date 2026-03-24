@@ -38,6 +38,7 @@ const stats = [
 const GPSTracking = () => {
   return (
     <Layout>
+      <SEO title="GPS Tracking & Dashcams" description="Real-time fleet GPS tracking with AI-powered dashcams. Optimize routes, improve driver safety, and reduce fuel costs." canonicalUrl="/gps-tracking" />
       <ProductPageHero
         badge="GPS Tracking & Dashcams"
         icon={MapPin}

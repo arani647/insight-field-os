@@ -29,6 +29,7 @@ const stats = [
 const TextMarketing = () => {
   return (
     <Layout>
+      <SEO title="Text Marketing" description="AI-powered text marketing with 98% open rates. Create campaigns, automate follow-ups, and turn messages into booked jobs." canonicalUrl="/text-marketing" />
       <ProductPageHero
         badge="Text Marketing"
         icon={Send}

@@ -147,6 +147,7 @@ const industries: Industry[] = [
 const Industries = () => {
   return (
     <Layout>
+      <SEO title="Industries" description="Servinix is built for HVAC, plumbing, electrical, pest control, landscaping, pool service, and security companies." canonicalUrl="/industries" />
       <ProductPageHero
         badge="Industries"
         icon={Building2}
