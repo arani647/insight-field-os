@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import ProductPageHero from "@/components/ProductPageHero";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";

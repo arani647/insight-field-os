@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import ProductPageHero from "@/components/ProductPageHero";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";

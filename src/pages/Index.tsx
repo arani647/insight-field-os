@@ -14,6 +14,17 @@ const HomeBelowFold = lazy(() => import("@/components/HomeBelowFold"));
 const Index = () => {
   return (
     <Layout>
+      <SEO
+        canonicalUrl="/"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "Servinix",
+          applicationCategory: "BusinessApplication",
+          description: "AI-native platform for field service businesses combining fleet GPS tracking, field service management, and AI-powered assistants.",
+          url: "https://servinix.com",
+        }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-hero-gradient">
         <div className="absolute inset-0 opacity-30">

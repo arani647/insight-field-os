@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import FeatureSection from "@/components/FeatureSection";
 import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
