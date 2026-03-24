@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import heroDashboard from "@/assets/hero-dashboard-opt.webp";
 import heroDashboardSmall from "@/assets/hero-dashboard-sm-opt.webp";
 import heroDashboardMobile from "@/assets/hero-dashboard-mobile.webp";
