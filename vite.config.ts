@@ -37,6 +37,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
     mode === "production" && vitePrerender({
+      staticDir: path.join(__dirname, "dist"),
       routes: ROUTES_TO_PRERENDER,
       captureAfterDocumentEvent: "render-event",
     }),
