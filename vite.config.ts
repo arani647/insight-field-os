@@ -2,6 +2,27 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import vitePrerender from "vite-plugin-prerender";
+
+const ROUTES_TO_PRERENDER = [
+  "/",
+  "/product",
+  "/gps-tracking",
+  "/field-service",
+  "/field-service/get-noticed",
+  "/field-service/get-paid",
+  "/ai-employee",
+  "/ai-assistant",
+  "/reviews",
+  "/phones",
+  "/text-marketing",
+  "/industries",
+  "/pricing",
+  "/about",
+  "/contact",
+  "/privacy",
+  "/terms",
+];
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
