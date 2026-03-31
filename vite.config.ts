@@ -38,7 +38,7 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     mode === "production" && vitePrerender({
       routes: ROUTES_TO_PRERENDER,
-      renderAfterDocumentEvent: "render-event",
+      captureAfterDocumentEvent: "render-event",
     }),
   ].filter(Boolean),
   resolve: {
