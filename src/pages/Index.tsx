@@ -39,6 +39,10 @@ const Index = () => {
               <span className="text-gradient">Field Service Businesses</span>
             </h1>
 
+            <p className="mt-4 font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground/90 leading-[1.1] tracking-tight animate-hero-fade-up [animation-delay:150ms]">
+              Launching June 15, 2026
+            </p>
+
             <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-primary-foreground/70 animate-hero-fade-up [animation-delay:200ms]">
               Servinix combines fleet GPS tracking, field service management, and AI-powered assistants in one platform — helping service businesses run operations faster, respond to customers quicker, and eliminate the need for multiple disconnected tools.
             </p>
